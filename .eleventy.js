@@ -41,6 +41,6 @@ module.exports = function (eleventyConfig) {
       layouts: '_layouts'
     },
 
-    pathPrefix: "/learning-styles/"
+    pathPrefix: "/learning-patterns/"
   };
 }
