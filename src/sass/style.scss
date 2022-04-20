@@ -1,0 +1,190 @@
+$ld-1: #4cc9f0;
+$ld-2: #fa6769;
+$ld-3: #f8961e;
+$ld-4: #f9c74f;
+$ld-5: #90be6d;
+$ld-6: #43aa8b;
+$ld-7: #c373f9;
+$rev: #fff;
+$blk: #000;
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  color: $blk;
+  display: flex;
+  flex-direction: column;
+  padding: 2ch;
+
+  ul.patterns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    grid-auto-rows: minmax(100px, 1fr);
+    grid-gap: 1ch;
+    margin: 0;
+    padding: 0;
+
+  li {
+    list-style: none;
+    padding: 1ch;
+    border-radius: .7ch;
+    text-transform: capitalize;
+    font-size: 110%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &::before {
+      display: block;
+      padding-bottom: 1ch;
+      text-transform: uppercase;
+      color: $rev;
+      font-size: 60%;
+      text-align: right;
+    }
+
+    a {
+      color: $blk;
+      text-decoration: none;
+
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right:0;
+        top:0;
+        bottom:0;
+      }
+    }
+
+    &.content {
+      &::before {content: 'Content'; color: mix(white, $ld-1, 80%);}
+      background: $ld-1;;
+      &:hover {background: mix(white, $ld-1, 30%);}
+      }
+    &.external {
+      &::before {content: 'External'; color: mix(white, $ld-2, 80%);}
+      background: $ld-2;
+      &:hover {background: mix(white, $ld-2, 30%);}
+      }
+    &.discussion {
+      &::before {content: 'discussion'; color: mix(white, $ld-3, 80%);}
+      background: $ld-3;
+      &:hover {background: mix(white, $ld-3, 30%);}
+      }
+    &.practice {
+      &::before {content: 'practice'; color: mix(white, $ld-4, 80%);}
+      background: $ld-4;
+      &:hover {background: mix(white, $ld-4, 30%);}
+      }
+    &.assessment {
+      &::before {content: 'Assessment'; color: mix(white, $ld-5, 80%);}
+      background: $ld-5;
+      &:hover {background: mix(white, $ld-5, 30%);}
+      }
+    &.review {
+      &::before {content: 'review'; color: mix(white, $ld-6, 80%);}
+      background: $ld-6;
+      &:hover {background: mix(white, $ld-6, 30%);}
+      }
+    &.interactive {
+      &::before {content: 'interactive'; color: mix(white, $ld-7, 80%);}
+      background: $ld-7;
+      &:hover {background: mix(white, $ld-7, 40%);}
+      }
+  }
+  li.assessment + li.content {grid-column-start: 1;}
+  li.content + li.discussion {grid-column-start: 1;}
+  li.discussion + li.external {grid-column-start: 1;}
+  li.external + li.interactive {grid-column-start: 1;}
+  li.interactive + li.practice {grid-column-start: 1;}
+  li.practice + li.review {grid-column-start: 1;}
+
+}
+
+  &.pattern {
+  & header {
+    padding: 1ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before {
+      display: block;
+      padding-bottom: 1ch;
+      text-transform: uppercase;
+      color: $rev;
+      font-size: 80%;
+      text-align: right;
+    }
+
+
+    &.content {
+      &::before {content: 'Content'; color: mix(white, $ld-1, 80%);}
+      background: $ld-1;;
+      }
+    &.external {
+      &::before {content: 'External'; color: mix(white, $ld-2, 80%);}
+      background: $ld-2;
+      }
+    &.discussion {
+      &::before {content: 'discussion'; color: mix(white, $ld-3, 80%);}
+      background: $ld-3;
+      }
+    &.practice {
+      &::before {content: 'practice'; color: mix(white, $ld-4, 80%);}
+      background: $ld-4;
+      }
+    &.assessment {
+      &::before {content: 'Assessment'; color: mix(white, $ld-5, 80%);}
+      background: $ld-5;
+      }
+    &.review {
+      &::before {content: 'review'; color: mix(white, $ld-6, 80%);}
+      background: $ld-6;
+      }
+    &.interactive {
+      &::before {content: 'interactive'; color: mix(white, $ld-7, 80%);}
+      background: $ld-7;
+      }
+
+    h1 {text-transform: capitalize;}
+  }
+
+  & main {
+    padding: 1ch;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    & > * {max-width: 80ch;}
+
+    &.content {
+      background: mix(white, $ld-1, 30%);}
+
+    &.external {
+      background: mix(white, $ld-2, 30%);}
+
+    &.discussion {
+      background: mix(white, $ld-3, 30%);}
+
+    &.practice {
+      background: mix(white, $ld-4, 30%);}
+
+    &.assessment {
+      background: mix(white, $ld-5, 30%);}
+
+    &.review {
+      background: mix(white, $ld-6, 30%);}
+
+    &.interactive {
+      background: mix(white, $ld-7, 40%);}
+  }
+
+}
+}

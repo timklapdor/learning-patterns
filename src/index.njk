@@ -1,0 +1,10 @@
+---
+layout: base.njk
+title: Learning Patterns
+---
+
+<ul class="patterns">
+{% for item in collections.sortedPatterns | sort(false, false, 'data.activity' )%}
+  <li class="{{ item.data.activity }}" ><a href="{{ item.url | url }}">{{ item.data.pattern }}</a></li>
+{% endfor %}
+</ul>
