@@ -113,6 +113,14 @@ body {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    max-width: 90ch;
+
+    & > * {
+      width: 38ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
 
     &::before {
       display: block;
@@ -161,8 +169,13 @@ body {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    max-width: 90ch;
 
-    & > * {max-width: 80ch;}
+    & > * {
+      max-width: 70ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &.content {
       background: mix(white, $ld-1, 30%);}
