@@ -2,7 +2,9 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["participation"]
-scaffold: ["Involvement and activity measurements. Examples:
+status: [""]
+definition: ["Involvement and activity measurements. "]
+scaffold: ["Examples:
 - attendance
 - activity participation
 - wiki/forum postings
@@ -10,7 +12,7 @@ scaffold: ["Involvement and activity measurements. Examples:
 - group work"]
 ---
 
-Involvement and activity measurements. Examples:
+Examples:
 - attendance
 - activity participation
 - wiki/forum postings

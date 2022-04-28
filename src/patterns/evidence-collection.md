@@ -2,7 +2,9 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["evidence Collection"]
-scaffold: ["structured collection of learning. Examples:
+status: [""]
+definition: ["Structured collection of learning. "]
+scaffold: ["Examples:
 - journal
 - logbook
 - portfolio
@@ -11,7 +13,7 @@ scaffold: ["structured collection of learning. Examples:
 - notebook"]
 ---
 
-Structured collection of learning. Examples:
+Examples:
 - journal
 - logbook
 - portfolio

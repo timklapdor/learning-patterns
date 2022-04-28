@@ -2,7 +2,9 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["analysis & critique"]
-scaffold: ["Offering interpretation of information. Examples:
+status: [""]
+definition: ["Offering interpretation of information. "]
+scaffold: ["Examples:
 - essay
 - thesis
 - dissertation
@@ -11,7 +13,7 @@ scaffold: ["Offering interpretation of information. Examples:
 - review of peers"]
 ---
 
-Offering interpretation of information. Examples:
+Examples:
 - essay
 - thesis
 - dissertation

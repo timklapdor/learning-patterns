@@ -2,7 +2,9 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["process Documentation "]
-scaffold: ["documented actions. Examples:
+status: [""]
+definition: ["Documented actions."]
+scaffold: ["Examples:
 - operations manual
 - application form
 - scope & sequence
@@ -11,7 +13,7 @@ scaffold: ["documented actions. Examples:
 - how-to guide"]
 ---
 
-Documented actions. Examples:
+Examples:
 - operations manual
 - application form
 - scope & sequence

@@ -2,14 +2,16 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["observation"]
-scaffold: ["recording of practice. Examples:
+status: [""]
+definition: ["Recording of practice. "]
+scaffold: ["Examples:
 - study tour
 - mentor asessement
 - log and report
 - clinical assessment"]
 ---
 
-Recording of practice. Examples:
+Examples:
 - study tour
 - mentor asessement
 - log and report

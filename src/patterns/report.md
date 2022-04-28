@@ -2,14 +2,16 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["report"]
-scaffold: ["Statement of information. Examples:
+status: [""]
+definition: ["Statement of information."]
+scaffold: ["Examples:
 - case review
 - profile
 - lab report
 - audit"]
 ---
 
-Statement of information. Examples:
+Examples:
 - case review
 - profile
 - lab report

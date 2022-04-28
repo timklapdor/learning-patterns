@@ -2,7 +2,9 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["reflections"]
-scaffold: ["critical self-examination of practice. Examples:
+status: [""]
+definition: ["Critical self-examination of practice. "]
+scaffold: ["Examples:
 - personal experience
 - manifesto
 - autoethnography
@@ -11,7 +13,7 @@ scaffold: ["critical self-examination of practice. Examples:
 - portfolio"]
 ---
 
-Critical self-examination of practice. Examples:
+Examples:
 - personal experience
 - manifesto
 - autoethnography

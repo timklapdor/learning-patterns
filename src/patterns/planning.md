@@ -2,14 +2,16 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["planning"]
-scaffold: ["proposed actions or achievements. Examples:
+status: [""]
+definition: ["Proposed actions or achievements. "]
+scaffold: ["Examples:
 - proposal
 - design
 - strategy
 - storyboard"]
 ---
 
-Proposed actions or achievements. Examples:
+Examples:
 - proposal
 - design
 - strategy

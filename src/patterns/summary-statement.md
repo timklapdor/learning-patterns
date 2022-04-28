@@ -2,7 +2,9 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["summary statement"]
-scaffold: ["statement of main points. Examples:
+status: [""]
+definition: ["Statement of main points."]
+scaffold: ["Examples:
 - briefing paper
 - poster
 - newsletter
@@ -10,7 +12,7 @@ scaffold: ["statement of main points. Examples:
 - outline"]
 ---
 
-Statement of main points. Examples:
+Examples:
 - briefing paper
 - poster
 - newsletter

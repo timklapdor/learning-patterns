@@ -2,7 +2,9 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["presentation"]
-scaffold: ["speech or talk to an audience. Examples:
+status: [""]
+definition: ["Speech or talk to an audience. "]
+scaffold: ["Examples:
 - speech
 - debate
 - pitch
@@ -11,7 +13,7 @@ scaffold: ["speech or talk to an audience. Examples:
 - viva-voce"]
 ---
 
-Speech or talk to an audience. Examples:
+Examples:
 - speech
 - debate
 - pitch

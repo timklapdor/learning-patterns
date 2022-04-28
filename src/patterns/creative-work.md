@@ -2,7 +2,9 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["creative work"]
-scaffold: ["Manifestation of creative effort as artefact Examples:
+status: [""]
+definition: ["Manifestation of creative effort as artefact."]
+scaffold: ["Examples:
 - performance
 - poetry
 - fiction
@@ -15,7 +17,7 @@ scaffold: ["Manifestation of creative effort as artefact Examples:
 - animation & modelling"]
 ---
 
-Manifestation of creative effort as artefact Examples:
+Examples:
 - performance
 - poetry
 - fiction

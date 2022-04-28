@@ -2,13 +2,15 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["test environment"]
-scaffold: ["Structured and constrained setting. Examples:
+status: [""]
+definition: ["Structured and constrained setting. "]
+scaffold: ["Examples:
 - exam
 - quiz
 - tests"]
 ---
 
-structured and constrained setting. Examples:
+Examples:
 - exam
 - quiz
 - tests

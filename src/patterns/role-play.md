@@ -2,11 +2,13 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["role play"]
-scaffold: ["scenario and actor based. Examples:
+status: [""]
+definition: ["Scenario and actor based. "]
+scaffold: ["Examples:
 - involvement in session
 - observation of session"]
 ---
 
-Scenario and actor based. Examples:
+Examples:
 - involvement in session
 - observation of session

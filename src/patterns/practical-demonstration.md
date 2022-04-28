@@ -2,14 +2,16 @@
 activity: ["assessment"]
 type: ["productive"]
 pattern: ["practical demonstration"]
-scaffold: ["examples of skills and knowledge. Examples:
+status: [""]
+definition: ["Examples of skills and knowledge."]
+scaffold: ["Examples:
 - skill demonstration
 - test of skill
 - work placement
 - simulation competency"]
 ---
 
-Examples of skills and knowledge. Examples:
+Examples:
 - skill demonstration
 - test of skill
 - work placement
