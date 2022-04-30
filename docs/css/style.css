@@ -144,8 +144,8 @@ body.pattern header {
   max-width: 90ch;
 }
 body.pattern header > * {
-  width: 38ch;
-  margin-left: auto;
+  width: 100%;
+  margin-left: 2vw;
   margin-right: auto;
 }
 body.pattern header::before {
@@ -219,6 +219,11 @@ body.pattern main > * {
   max-width: 70ch;
   margin-left: auto;
   margin-right: auto;
+}
+body.pattern main .definition {
+  max-width: 60ch;
+  font-size: 120%;
+  font-style: italic;
 }
 body.pattern main.content {
   background: #82d9f5;

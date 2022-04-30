@@ -116,8 +116,8 @@ body {
     max-width: 90ch;
 
     & > * {
-      width: 38ch;
-      margin-left: auto;
+      width: 100%;
+      margin-left: 2vw;
       margin-right: auto;
     }
 
@@ -175,6 +175,22 @@ body {
       max-width: 70ch;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    .definition {
+      max-width: 60ch;
+      font-size: 120%;
+      font-style: italic;
+
+      // &::before {
+      //   display: block;
+      //   padding-bottom: 2ch;
+      //   text-transform: uppercase;
+      //   color: $rev;
+      //   font-size: 60%;
+      //   content: 'definition';
+      // }
+
     }
 
     &.content {
