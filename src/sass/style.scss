@@ -137,27 +137,27 @@ body {
       background: $ld-1;;
       }
     &.external {
-      &::before {content: 'External'; color: mix(white, $ld-2, 80%);}
+      &::before {content: 'External'; color: mix(white, $ld-7, 80%);}
       background: $ld-2;
       }
     &.discussion {
-      &::before {content: 'discussion'; color: mix(white, $ld-3, 80%);}
+      &::before {content: 'discussion'; color: mix(white, $ld-2, 80%);}
       background: $ld-3;
       }
     &.practice {
-      &::before {content: 'practice'; color: mix(white, $ld-4, 80%);}
+      &::before {content: 'practice'; color: mix(white, $ld-3, 80%);}
       background: $ld-4;
       }
     &.assessment {
-      &::before {content: 'Assessment'; color: mix(white, $ld-5, 80%);}
+      &::before {content: 'Assessment'; color: mix(white, $ld-4, 80%);}
       background: $ld-5;
       }
     &.review {
-      &::before {content: 'review'; color: mix(white, $ld-6, 80%);}
+      &::before {content: 'review'; color: mix(white, $ld-5, 80%);}
       background: $ld-6;
       }
     &.interactive {
-      &::before {content: 'interactive'; color: mix(white, $ld-7, 80%);}
+      &::before {content: 'interactive'; color: mix(white, $ld-6, 80%);}
       background: $ld-7;
       }
 
