@@ -56,34 +56,34 @@ body ul.patterns li.content:hover {
   background: #82d9f5;
 }
 body ul.patterns li.external {
-  background: #fa6769;
+  background: #c373f9;
 }
 body ul.patterns li.external::before {
   content: "External";
-  color: #fee1e1;
+  color: #f3e3fe;
 }
 body ul.patterns li.external:hover {
-  background: #fc9596;
+  background: #d59dfb;
 }
 body ul.patterns li.discussion {
-  background: #f8961e;
+  background: #fa6769;
 }
 body ul.patterns li.discussion::before {
   content: "discussion";
-  color: #feead2;
+  color: #fee1e1;
 }
 body ul.patterns li.discussion:hover {
-  background: #fab662;
+  background: #fc9596;
 }
 body ul.patterns li.practice {
-  background: #f9c74f;
+  background: #f8961e;
 }
 body ul.patterns li.practice::before {
   content: "practice";
-  color: #fef4dc;
+  color: #feead2;
 }
 body ul.patterns li.practice:hover {
-  background: #fbd884;
+  background: #fab662;
 }
 body ul.patterns li.assessment {
   background: #90be6d;
@@ -168,42 +168,42 @@ body.pattern header.external {
 }
 body.pattern header.external::before {
   content: "External";
-  color: #fee1e1;
+  color: #f3e3fe;
 }
 body.pattern header.discussion {
   background: #f8961e;
 }
 body.pattern header.discussion::before {
   content: "discussion";
-  color: #feead2;
+  color: #fee1e1;
 }
 body.pattern header.practice {
   background: #f9c74f;
 }
 body.pattern header.practice::before {
   content: "practice";
-  color: #fef4dc;
+  color: #feead2;
 }
 body.pattern header.assessment {
   background: #90be6d;
 }
 body.pattern header.assessment::before {
   content: "Assessment";
-  color: #e9f2e2;
+  color: #fef4dc;
 }
 body.pattern header.review {
   background: #43aa8b;
 }
 body.pattern header.review::before {
   content: "review";
-  color: #d9eee8;
+  color: #e9f2e2;
 }
 body.pattern header.interactive {
   background: #c373f9;
 }
 body.pattern header.interactive::before {
   content: "interactive";
-  color: #f3e3fe;
+  color: #d9eee8;
 }
 body.pattern header h1 {
   text-transform: capitalize;
@@ -229,20 +229,20 @@ body.pattern main.content {
   background: #82d9f5;
 }
 body.pattern main.external {
-  background: #fc9596;
+  background: #d59dfb;
 }
 body.pattern main.discussion {
-  background: #fab662;
+  background: #fc9596;
 }
 body.pattern main.practice {
-  background: #fbd884;
+  background: #fab662;
 }
 body.pattern main.assessment {
-  background: #b1d299;
+  background: #fbd884;
 }
 body.pattern main.review {
-  background: #7bc4ae;
+  background: #b1d299;
 }
 body.pattern main.interactive {
-  background: #dbabfb;
+  background: #8eccb9;
 }

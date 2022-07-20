@@ -65,19 +65,19 @@ body {
       &:hover {background: mix(white, $ld-1, 30%);}
       }
     &.external {
-      &::before {content: 'External'; color: mix(white, $ld-2, 80%);}
+      &::before {content: 'External'; color: mix(white, $ld-7, 80%);}
+      background: $ld-7;
+      &:hover {background: mix(white, $ld-7, 30%);}
+      }
+    &.discussion {
+      &::before {content: 'discussion'; color: mix(white, $ld-2, 80%);}
       background: $ld-2;
       &:hover {background: mix(white, $ld-2, 30%);}
       }
-    &.discussion {
-      &::before {content: 'discussion'; color: mix(white, $ld-3, 80%);}
+    &.practice {
+      &::before {content: 'practice'; color: mix(white, $ld-3, 80%);}
       background: $ld-3;
       &:hover {background: mix(white, $ld-3, 30%);}
-      }
-    &.practice {
-      &::before {content: 'practice'; color: mix(white, $ld-4, 80%);}
-      background: $ld-4;
-      &:hover {background: mix(white, $ld-4, 30%);}
       }
     &.assessment {
       &::before {content: 'Assessment'; color: mix(white, $ld-5, 80%);}
