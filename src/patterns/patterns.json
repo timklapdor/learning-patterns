@@ -1,6 +1,6 @@
 
 {
   "layout": "pattern",
-  "tags": "patterns"
-
+  "tags": "patterns",
+  "permalink": "/{{ page.fileSlug}}.html/"
 }

@@ -7,13 +7,13 @@
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 </head>
 <body class="pattern">
+	<nav class="{{activity}}"><a href="../"> back</a></nav>
 	<header class="activity {{ activity }}">
 		<h1>{{ pattern }}</h1>
 		<p class="definition">{{ definition }}</p>
 
 	</header>
 	<main class="{{ activity }}">
-
 	{{ content | safe }}
 	</main>
 </body>

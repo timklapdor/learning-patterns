@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: sans-serif;
   background-color: #f9f9f9;
@@ -5,6 +6,44 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2ch;
+}
+body nav {
+  text-align: center;
+  padding: 0.5ch 1ch;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90ch;
+  border-radius: 0.7ch 0.7ch 0 0;
+}
+body nav:before {
+  color: #000;
+  content: "←";
+}
+body nav a {
+  color: #000;
+  text-decoration: none;
+}
+body nav.content {
+  background: #4cc9f0;
+}
+body nav.external {
+  background: #c373f9;
+}
+body nav.discussion {
+  background: #fa6769;
+}
+body nav.practice {
+  background: #f8961e;
+}
+body nav.assessment {
+  background: #f9c74f;
+}
+body nav.review {
+  background: #90be6d;
+}
+body nav.interactive {
+  background: #43aa8b;
 }
 body ul.patterns {
   display: grid;
@@ -46,74 +85,88 @@ body ul.patterns li a:after {
   bottom: 0;
 }
 body ul.patterns li.content {
-  background: #4cc9f0;
+  background: #a6e4f8;
+  border: solid 1px #4cc9f0;
+  border-top: solid 2ch #4cc9f0;
 }
 body ul.patterns li.content::before {
   content: "Content";
-  color: #dbf4fc;
+  color: #266578;
 }
 body ul.patterns li.content:hover {
   background: #82d9f5;
 }
 body ul.patterns li.external {
-  background: #c373f9;
+  background: #e1b9fc;
+  border: solid 1px #c373f9;
+  border-top: solid 2ch #c373f9;
 }
 body ul.patterns li.external::before {
   content: "External";
-  color: #f3e3fe;
+  color: #623a7d;
 }
 body ul.patterns li.external:hover {
   background: #d59dfb;
 }
 body ul.patterns li.discussion {
-  background: #fa6769;
+  background: #fdb3b4;
+  border: solid 1px #fa6769;
+  border-top: solid 2ch #fa6769;
 }
 body ul.patterns li.discussion::before {
   content: "discussion";
-  color: #fee1e1;
+  color: #7d3435;
 }
 body ul.patterns li.discussion:hover {
   background: #fc9596;
 }
 body ul.patterns li.practice {
-  background: #f8961e;
+  background: #fccb8f;
+  border: solid 1px #f8961e;
+  border-top: solid 2ch #f8961e;
 }
 body ul.patterns li.practice::before {
   content: "practice";
-  color: #feead2;
+  color: #7c4b0f;
 }
 body ul.patterns li.practice:hover {
   background: #fab662;
 }
 body ul.patterns li.assessment {
-  background: #90be6d;
+  background: #fce3a7;
+  border: solid 1px #f9c74f;
+  border-top: solid 2ch #f9c74f;
 }
 body ul.patterns li.assessment::before {
   content: "Assessment";
-  color: #e9f2e2;
+  color: #7d6428;
 }
 body ul.patterns li.assessment:hover {
-  background: #b1d299;
+  background: #fbd884;
 }
 body ul.patterns li.review {
-  background: #43aa8b;
+  background: #c8dfb6;
+  border: solid 1px #90be6d;
+  border-top: solid 2ch #90be6d;
 }
 body ul.patterns li.review::before {
   content: "review";
-  color: #d9eee8;
+  color: #485f37;
 }
 body ul.patterns li.review:hover {
-  background: #7bc4ae;
+  background: #b1d299;
 }
 body ul.patterns li.interactive {
-  background: #c373f9;
+  background: #a1d5c5;
+  border: solid 1px #43aa8b;
+  border-top: solid 2ch #43aa8b;
 }
 body ul.patterns li.interactive::before {
   content: "interactive";
-  color: #f3e3fe;
+  color: #225546;
 }
 body ul.patterns li.interactive:hover {
-  background: #dbabfb;
+  background: #8eccb9;
 }
 body ul.patterns li.assessment + li.content {
   grid-column-start: 1;
@@ -142,11 +195,12 @@ body.pattern header {
   margin-left: auto;
   margin-right: auto;
   max-width: 90ch;
+  line-height: 1.3;
 }
 body.pattern header > * {
-  width: 100%;
   margin-left: 2vw;
   margin-right: auto;
+  max-width: 90ch !important;
 }
 body.pattern header::before {
   display: block;
@@ -157,53 +211,53 @@ body.pattern header::before {
   text-align: right;
 }
 body.pattern header.content {
-  background: #4cc9f0;
+  background: #a6e4f8;
 }
 body.pattern header.content::before {
   content: "Content";
-  color: #dbf4fc;
+  color: #266578;
 }
 body.pattern header.external {
-  background: #fa6769;
+  background: #e1b9fc;
 }
 body.pattern header.external::before {
   content: "External";
-  color: #f3e3fe;
+  color: #623a7d;
 }
 body.pattern header.discussion {
-  background: #f8961e;
+  background: #fdb3b4;
 }
 body.pattern header.discussion::before {
   content: "discussion";
-  color: #fee1e1;
+  color: #7d3435;
 }
 body.pattern header.practice {
-  background: #f9c74f;
+  background: #fccb8f;
 }
 body.pattern header.practice::before {
   content: "practice";
-  color: #feead2;
+  color: #7c4b0f;
 }
 body.pattern header.assessment {
-  background: #90be6d;
+  background: #fce3a7;
 }
 body.pattern header.assessment::before {
   content: "Assessment";
-  color: #fef4dc;
+  color: #7d6428;
 }
 body.pattern header.review {
-  background: #43aa8b;
+  background: #c8dfb6;
 }
 body.pattern header.review::before {
   content: "review";
-  color: #e9f2e2;
+  color: #485f37;
 }
 body.pattern header.interactive {
-  background: #c373f9;
+  background: #a1d5c5;
 }
 body.pattern header.interactive::before {
   content: "interactive";
-  color: #d9eee8;
+  color: #225546;
 }
 body.pattern header h1 {
   text-transform: capitalize;
@@ -214,11 +268,14 @@ body.pattern main {
   margin-left: auto;
   margin-right: auto;
   max-width: 90ch;
+  border-radius: 0 0 0.7ch 0.7ch;
+  line-height: 1.3;
 }
 body.pattern main > * {
   max-width: 70ch;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 2vw;
 }
 body.pattern main .definition {
   max-width: 60ch;
@@ -226,23 +283,23 @@ body.pattern main .definition {
   font-style: italic;
 }
 body.pattern main.content {
-  background: #82d9f5;
+  background: #70d4f3;
 }
 body.pattern main.external {
-  background: #d59dfb;
+  background: #cf8ffa;
 }
 body.pattern main.discussion {
-  background: #fc9596;
+  background: #fb8587;
 }
 body.pattern main.practice {
-  background: #fab662;
+  background: #f9ab4b;
 }
 body.pattern main.assessment {
-  background: #fbd884;
+  background: #fad272;
 }
 body.pattern main.review {
-  background: #b1d299;
+  background: #a6cb8a;
 }
 body.pattern main.interactive {
-  background: #8eccb9;
+  background: #69bba2;
 }
