@@ -149,12 +149,12 @@ body {
       &:hover {background: mix(white, $ld-6, 40%);}
       }
   }
-  li.assessment + li.content {grid-column-start: 1;}
-  li.content + li.discussion {grid-column-start: 1;}
-  li.discussion + li.external {grid-column-start: 1;}
-  li.external + li.interactive {grid-column-start: 1;}
-  li.interactive + li.practice {grid-column-start: 1;}
-  li.practice + li.review {grid-column-start: 1;}
+  li.content + li.external {grid-column-start: 1;}
+  li.external + li.discussion {grid-column-start: 1;}
+  li.discussion + li.practice {grid-column-start: 1;}
+  li.practice + li.assessment {grid-column-start: 1;}
+  li.assessment + li.review {grid-column-start: 1;}
+  li.review + li.interactive {grid-column-start: 1;}
 
 }
 

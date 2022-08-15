@@ -168,22 +168,22 @@ body ul.patterns li.interactive::before {
 body ul.patterns li.interactive:hover {
   background: #8eccb9;
 }
-body ul.patterns li.assessment + li.content {
+body ul.patterns li.content + li.external {
   grid-column-start: 1;
 }
-body ul.patterns li.content + li.discussion {
+body ul.patterns li.external + li.discussion {
   grid-column-start: 1;
 }
-body ul.patterns li.discussion + li.external {
+body ul.patterns li.discussion + li.practice {
   grid-column-start: 1;
 }
-body ul.patterns li.external + li.interactive {
+body ul.patterns li.practice + li.assessment {
   grid-column-start: 1;
 }
-body ul.patterns li.interactive + li.practice {
+body ul.patterns li.assessment + li.review {
   grid-column-start: 1;
 }
-body ul.patterns li.practice + li.review {
+body ul.patterns li.review + li.interactive {
   grid-column-start: 1;
 }
 body.pattern header {

@@ -1,5 +1,6 @@
 ---
 activity: ["practice"]
+tags: ["practice"]
 type: ["formative"]
 pattern: ["piecework tasks"]
 status: [""]

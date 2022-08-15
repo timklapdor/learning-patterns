@@ -1,5 +1,6 @@
 ---
 activity: ["assessment"]
+tags: ["assessment"]
 type: ["productive"]
 pattern: ["report"]
 status: [""]

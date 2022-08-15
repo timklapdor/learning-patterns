@@ -1,5 +1,6 @@
 ---
 activity: ["interactive"]
+tags: ["interactive"]
 type: ["social"]
 pattern: ["divergent thinking"]
 status: [""]

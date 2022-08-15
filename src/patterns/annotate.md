@@ -1,5 +1,6 @@
 ---
 activity: ["external"]
+tags: ["external"]
 type: ["investigative"]
 pattern: ["annotate"]
 status: [""]

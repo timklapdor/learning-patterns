@@ -1,5 +1,6 @@
 ---
 activity: ["discussion"]
+tags: ["discussion"]
 type: ["inquiry"]
 pattern: ["moral—ethical dilemma"]
 status: [""]

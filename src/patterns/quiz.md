@@ -1,5 +1,6 @@
 ---
 activity: ["review"]
+tags: ["review"]
 type: ["evaluative"]
 pattern: ["quiz"]
 status: [""]

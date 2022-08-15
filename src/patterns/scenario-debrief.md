@@ -1,5 +1,6 @@
 ---
 activity: ["practice"]
+tags: ["practice"]
 type: ["formative"]
 pattern: ["scenario and debrief"]
 status: [""]

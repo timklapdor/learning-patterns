@@ -1,5 +1,6 @@
 ---
 activity: ["content"]
+tags: ["content"]
 type: ["acquisition"]
 pattern: ["loop Back"]
 status: [""]

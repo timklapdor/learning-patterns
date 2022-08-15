@@ -4,7 +4,33 @@ title: Learning Patterns
 ---
 
 <ul class="patterns">
-{% for item in collections.sortedPatterns | sort(false, false, 'data.activity' )%}
+
+{% for item in collections.content | sort(false, false, 'data.pattern' )%}
   <li class="{{ item.data.activity }}" ><a href="{{ item.url | url }}">{{ item.data.pattern }}</a></li>
 {% endfor %}
+
+{% for item in collections.external | sort(false, false, 'data.pattern' )%}
+  <li class="{{ item.data.activity }}" ><a href="{{ item.url | url }}">{{ item.data.pattern }}</a></li>
+{% endfor %}
+
+{% for item in collections.discussion | sort(false, false, 'data.pattern' )%}
+  <li class="{{ item.data.activity }}" ><a href="{{ item.url | url }}">{{ item.data.pattern }}</a></li>
+{% endfor %}
+
+{% for item in collections.practice | sort(false, false, 'data.pattern' )%}
+  <li class="{{ item.data.activity }}" ><a href="{{ item.url | url }}">{{ item.data.pattern }}</a></li>
+{% endfor %}
+
+{% for item in collections.assessment | sort(false, false, 'data.pattern' )%}
+  <li class="{{ item.data.activity }}" ><a href="{{ item.url | url }}">{{ item.data.pattern }}</a></li>
+{% endfor %}
+
+{% for item in collections.review | sort(false, false, 'data.pattern' )%}
+  <li class="{{ item.data.activity }}" ><a href="{{ item.url | url }}">{{ item.data.pattern }}</a></li>
+{% endfor %}
+
+{% for item in collections.interactive | sort(false, false, 'data.pattern' )%}
+  <li class="{{ item.data.activity }}" ><a href="{{ item.url | url }}">{{ item.data.pattern }}</a></li>
+{% endfor %}
+
 </ul>

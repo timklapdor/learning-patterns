@@ -1,5 +1,6 @@
 ---
 activity: ["review"]
+tags: ["review"]
 type: ["evaluative"]
 pattern: ["peer interviews"]
 status: [""]

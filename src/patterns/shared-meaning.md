@@ -1,5 +1,6 @@
 ---
 activity: ["discussion"]
+tags: ["discussion"]
 type: ["inquiry"]
 pattern: ["shared meaning"]
 status: [""]

@@ -1,5 +1,6 @@
 ---
 activity: ["discussion"]
+tages: ["discussion"]
 type: ["inquiry"]
 pattern: ["open ended questions"]
 status: [""]
