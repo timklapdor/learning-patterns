@@ -186,6 +186,19 @@ body ul.patterns li.assessment + li.review {
 body ul.patterns li.review + li.interactive {
   grid-column-start: 1;
 }
+body ul.patterns.teaser {
+  grid-auto-rows: auto;
+}
+body ul.patterns.teaser li {
+  justify-content: flex-start;
+}
+body ul.patterns.teaser li h2 {
+  font-size: 110%;
+}
+body ul.patterns.teaser li p {
+  text-transform: none;
+  font-size: 90%;
+}
 body.pattern header {
   padding: 1ch;
   display: flex;

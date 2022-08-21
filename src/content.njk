@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: Learning Patterns
+permalink: content.html
+---
+
+<ul class="patterns teaser">
+
+{% for item in collections.content | sort(false, false, 'data.pattern' )%}
+  <li class="{{ item.data.activity }}" ><a href="{{ item.url | url }}">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></a></li>
+{% endfor %}
+
+</ul>

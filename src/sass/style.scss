@@ -156,6 +156,23 @@ body {
   li.assessment + li.review {grid-column-start: 1;}
   li.review + li.interactive {grid-column-start: 1;}
 
+  &.teaser {
+    grid-auto-rows: auto;
+
+    li {
+      justify-content: flex-start;
+
+      h2 {
+        font-size: 110%;
+      }
+
+      p {
+        text-transform: none;
+        font-size: 90%;
+      }
+    }
+  }
+
 }
 
   &.pattern {
