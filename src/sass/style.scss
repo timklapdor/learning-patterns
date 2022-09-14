@@ -300,6 +300,7 @@ body {
 div.filters {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0 0 2ch 0;
 
