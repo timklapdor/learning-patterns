@@ -1,7 +1,7 @@
 ---
 activity: ["content"]
 tags: ["content"]
-type: ["acquisition"]
+type: ["assimilative"]
 pattern: ["illustration"]
 status: [""]
 definition: ["The use of visual imagery to enhance, explain or as evidence of a concept. "]

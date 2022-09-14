@@ -191,6 +191,11 @@ body ul.patterns.teaser {
 }
 body ul.patterns.teaser li {
   justify-content: flex-start;
+  display: none;
+  /* Hidden by default */
+}
+body ul.patterns.teaser li.show {
+  display: block;
 }
 body ul.patterns.teaser li h2 {
   font-size: 110%;
@@ -314,5 +319,65 @@ body.pattern main.review {
   background: #a6cb8a;
 }
 body.pattern main.interactive {
+  background: #69bba2;
+}
+
+div.filters {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 0 2ch 0;
+}
+div.filters button {
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5ch 1ch;
+  border-radius: 0.7ch;
+  margin: 0.5ch;
+  cursor: pointer;
+}
+div.filters button.active {
+  background-color: #666;
+}
+div.filters button.content {
+  background: #a6e4f8;
+}
+div.filters button.content:hover {
+  background: #70d4f3;
+}
+div.filters button.external {
+  background: #e1b9fc;
+}
+div.filters button.external:hover {
+  background: #cf8ffa;
+}
+div.filters button.discussion {
+  background: #fdb3b4;
+}
+div.filters button.discussion:hover {
+  background: #fb8587;
+}
+div.filters button.practice {
+  background: #fccb8f;
+}
+div.filters button.practice:hover {
+  background: #f9ab4b;
+}
+div.filters button.assessment {
+  background: #fce3a7;
+}
+div.filters button.assessment:hover {
+  background: #fad272;
+}
+div.filters button.review {
+  background: #c8dfb6;
+}
+div.filters button.review:hover {
+  background: #a6cb8a;
+}
+div.filters button.interactive {
+  background: #a1d5c5;
+}
+div.filters button.interactive:hover {
   background: #69bba2;
 }

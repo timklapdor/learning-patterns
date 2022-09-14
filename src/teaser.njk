@@ -1,0 +1,52 @@
+---
+layout: base.njk
+title: Learning Patterns
+filter: testing
+permalink: index.html
+---
+
+<ul class="patterns teaser">
+
+{% for item in collections.content | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.activity }}" ><a href="{{ item.url | url }}">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></a></li>
+{% endfor %}
+
+{% for item in collections.external | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.activity }}" ><a href="{{ item.url | url }}">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></a></li>
+{% endfor %}
+
+{% for item in collections.discussion | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.activity }}" ><a href="{{ item.url | url }}">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></a></li>
+{% endfor %}
+
+{% for item in collections.practice | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.activity }}" ><a href="{{ item.url | url }}">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></a></li>
+{% endfor %}
+
+{% for item in collections.assessment | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.activity }}" ><a href="{{ item.url | url }}">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></a></li>
+{% endfor %}
+
+{% for item in collections.review | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.activity }}" ><a href="{{ item.url | url }}">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></a></li>
+{% endfor %}
+
+{% for item in collections.interactive | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.activity }}" ><a href="{{ item.url | url }}">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></a></li>
+{% endfor %}
+
+</ul>

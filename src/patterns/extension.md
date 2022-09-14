@@ -1,7 +1,7 @@
 ---
 activity: ["content"]
 tags: ["content"]
-type: ["acquisition"]
+type: ["assimilative"]
 pattern: ["extension"]
 status: [""]
 definition: ["A link to further information about a topic or concept. "]

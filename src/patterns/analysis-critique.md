@@ -4,7 +4,7 @@ tags: ["assessment"]
 type: ["productive"]
 pattern: ["analysis & critique"]
 status: [""]
-definition: ["Offering interpretation of information. "]
+definition: ["Offering interpretation of information."]
 scaffold: ["Examples:
 - essay
 - thesis

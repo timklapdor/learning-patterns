@@ -12,6 +12,7 @@ scaffold: ["Examples:
 - interview
 - workbook
 - notebook"]
+
 ---
 
 Examples:

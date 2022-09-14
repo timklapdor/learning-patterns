@@ -1,7 +1,7 @@
 ---
 activity: ["content"]
 tags: ["content"]
-type: ["acquisition"]
+type: ["assimilative"]
 pattern: ["demonstration"]
 status: [""]
 definition: ["A practical exhibition and explanation of how something works or is performed. "]

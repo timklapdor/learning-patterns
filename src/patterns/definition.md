@@ -1,7 +1,7 @@
 ---
 activity: ["content"]
 tags: ["content"]
-type: ["acquisition"]
+type: ["assimilative"]
 pattern: ["definition"]
 status: [""]
 definition: ["A short and succinct definition for a key term or concept. If you can include a link to a source or expanded definition."]

@@ -1,7 +1,7 @@
 ---
 activity: ["content"]
 tags: ["content"]
-type: ["acquisition"]
+type: ["assimilative"]
 pattern: ["example"]
 status: [""]
 definition: ["A relatable and typical case or exercise that illustrates a concept in the real world."]

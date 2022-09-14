@@ -1,7 +1,7 @@
 ---
 activity: ["content"]
 tags: ["content"]
-type: ["acquisition"]
+type: ["assimilative"]
 pattern: ["explanation"]
 status: [""]
 definition: ["A clear articulation of the meaning, reason or justification for a statement."]

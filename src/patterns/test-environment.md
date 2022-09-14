@@ -2,7 +2,7 @@
 activity: ["assessment"]
 tags: ["assessment"]
 type: ["productive"]
-pattern: ["test environment"]
+pattern: ["test"]
 status: [""]
 definition: ["Structured and constrained setting. "]
 scaffold: ["Examples:

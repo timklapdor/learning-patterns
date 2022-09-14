@@ -1,11 +1,11 @@
 ---
 activity: ["content"]
 tags: ["content"]
-type: ["acquisition"]
+type: ["assimilative"]
 pattern: ["stepped process"]
 status: [""]
-definition: ["A description of each step in a process. "]
-scaffold: ["The aim of a stepped process is to make explicit every action the learner needs to take, and what the result should be once they've performed each step in the process. A stepped process is a form of instruction but is best presented as numbered steps. Each step is not just listed, but also explained in terms of addressing how or why the step is important."]
+definition: ["A Stepped Process includes a description of each step and the decisions and reasoning behind them."]
+scaffold: ["A Stepped Process aims to make explicit every action the learner needs to take and what the result should be once they've performed each step. A Stepped Process is a form of instructions where the direction for each step is not just listed but also explained, how or why it is essential. For example, Ikea instructions provide clear instructions, but they don't explain why each step is required or what it contributes to the whole. A Stepped Process offers clear directions and includes reasoning, especially around any decision-making students would be expected to replicate when applying the process in different circumstances."]
 ---
 
-The aim of a stepped process is to make explicit every action the learner needs to take, and what the result should be once they've performed each step in the process. A stepped process is a form of instruction but is best presented as numbered steps. Each step is not just listed, but also explained in terms of addressing how or why the step is important.
+A Stepped Process aims to make explicit every action the learner needs to take and what the result should be once they've performed each step. A Stepped Process is a form of instructions where the direction for each step is not just listed but also explained, how or why it is essential. For example, Ikea instructions provide clear instructions, but they don't explain why each step is required or what it contributes to the whole. A Stepped Process offers clear directions and includes reasoning, especially around any decision-making students would be expected to replicate when applying the process in different circumstances.

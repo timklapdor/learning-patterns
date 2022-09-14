@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Learning Patterns
+permalink: modal.html
+modal: true
+---
+
+<ul class="patterns teaser">
+
+{% for item in collections.content | sort(false, false, 'data.pattern' )%}
+  <li class="{{ item.data.activity }}" ><a href="#" type="button" data-a11y-dialog-show="{{ item.data.pattern }}"">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></a></li>
+{% endfor %}
+
+</ul>
+
+
+{% for item in collections.content %}
+<div
+  id="{{ item.data.pattern }} | slug "
+  aria-labelledby="{{ item.data.pattern }}"
+  aria-hidden="true"
+  class="pattern"
+>
+  <!-- 2. The dialog overlay -->
+  <div data-a11y-dialog-hide></div>
+  <!-- 3. The actual dialog -->
+  <div role="document">
+    <!-- 4. The close button -->
+    <button type="button" data-a11y-dialog-hide aria-label="Close dialog">
+      &times;
+    </button>
+    <!-- 5. The dialog title -->
+    <header class="activity {{ item.data.activity }}">
+      <h1>{{ tem.data.pattern }}</h1>
+        <p class="definition">{{ item.data.definition }}</p>
+    </header>
+    <main class="{{ item.data.activity }}">
+      {{ item.data.content | safe }}
+      </main>
+  </div>
+</div>
+{% endfor %}

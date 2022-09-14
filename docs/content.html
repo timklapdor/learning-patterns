@@ -11,17 +11,19 @@
 		<h1>Learning Patterns</h1>
 	</header>
 	<main>
+		
+
 	
 <ul class="patterns teaser">
 
 
   <li class="content" ><a href="/learning-patterns/aha-moment.html/">
     <h2>aha moment</h2>
-  <p>A clear intent to bring a concept together for the student to connect all the dots. </p></a></li>
+  <p>A clear intent to bring a concept together for the student to connect the dots.</p></a></li>
 
   <li class="content" ><a href="/learning-patterns/analogy.html/">
     <h2>analogy</h2>
-  <p>Use a comparison to show how two things are alike with the purpose of providing a more simplified or identifiable explanation.</p></a></li>
+  <p>Use a comparison to show how two things are alike to provide a more simplified or identifiable explanation.</p></a></li>
 
   <li class="content" ><a href="/learning-patterns/aside.html/">
     <h2>aside</h2>
@@ -69,15 +71,15 @@
 
   <li class="content" ><a href="/learning-patterns/quote.html/">
     <h2>quote</h2>
-  <p>A direct copy of a statement to provide evidence or authority for a statement, opinion or perspective.</p></a></li>
+  <p>A direct copy of the information provides evidence, authority and context for a statement, opinion or perspective.</p></a></li>
 
   <li class="content" ><a href="/learning-patterns/reveal.html/">
     <h2>reveal</h2>
-  <p>A set up where the hidden process is revealed to the student.</p></a></li>
+  <p>A set up where a hidden process is revealed to the student.</p></a></li>
 
   <li class="content" ><a href="/learning-patterns/stepped-process.html/">
     <h2>stepped process</h2>
-  <p>A description of each step in a process. </p></a></li>
+  <p>A Stepped Process includes a description of each step and the decisions and reasoning behind them.</p></a></li>
 
   <li class="content" ><a href="/learning-patterns/summary.html/">
     <h2>summary</h2>
@@ -95,5 +97,56 @@
 </ul>
 
 	</main>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("filters");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
 </body>
 </html>

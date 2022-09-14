@@ -1,7 +1,7 @@
 ---
 activity: ["content"]
 tags: ["content"]
-type: ["acquisition"]
+type: ["assimilative"]
 pattern: ["instruction "]
 status: [""]
 definition: ["A set of detailed information about what must be done, how to do it and what the results should be. "]

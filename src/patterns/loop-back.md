@@ -1,7 +1,7 @@
 ---
 activity: ["content"]
 tags: ["content"]
-type: ["acquisition"]
+type: ["assimilative"]
 pattern: ["loop Back"]
 status: [""]
 definition: ["Return to a previous topic, point or concept. "]

@@ -161,7 +161,11 @@ body {
 
     li {
       justify-content: flex-start;
+      display: none; /* Hidden by default */
 
+      &.show {
+        display: block;
+      }
       h2 {
         font-size: 110%;
       }
@@ -291,4 +295,58 @@ body {
   }
 
 }
+}
+
+div.filters {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 0 2ch 0;
+
+    button {
+      text-transform: uppercase;
+      border: none;
+      padding: .5ch 1ch;
+      border-radius: .7ch;
+      margin: .5ch;
+      cursor: pointer;
+
+      &.active {
+        background-color: #666;
+      }
+
+      &.content {
+        background: mix(white, $ld-1, 50%);
+        &:hover {background: mix(white, $ld-1, 20%);}
+      }
+
+      &.external {
+        background: mix(white, $ld-7, 50%);
+        &:hover {background: mix(white, $ld-7, 20%);}
+    }
+
+      &.discussion {
+        background: mix(white, $ld-2, 50%);
+        &:hover {background: mix(white, $ld-2, 20%);}
+    }
+
+      &.practice {
+        background: mix(white, $ld-3, 50%);
+        &:hover {background: mix(white, $ld-3, 20%);}
+      }
+
+      &.assessment {
+        background: mix(white, $ld-4, 50%);
+        &:hover {background: mix(white, $ld-4, 20%);}
+    }
+
+      &.review {
+        background: mix(white, $ld-5, 50%);
+        &:hover {background: mix(white, $ld-5, 20%);}}
+
+      &.interactive {
+        background: mix(white, $ld-6, 50%);
+        &:hover {background: mix(white, $ld-6, 20%);}
+      }
+    }
 }
