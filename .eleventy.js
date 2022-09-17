@@ -10,6 +10,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+  eleventyConfig.addFilter("capitals", function(string) {
+    return string.toUpperCase();
+  })
+
+
+
   // Markdown
   const markdownOptions = {
     html: true,

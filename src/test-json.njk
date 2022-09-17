@@ -1,0 +1,70 @@
+---
+title: Learning Patterns
+permalink: lp.json
+---
+{
+  "content": {
+    activity: "Course Content",
+    type: "Assimilative",
+    patterns: { {% for item in collections.content | sort(false, false, 'data.pattern' )%}
+      "{{ item.data.pattern }}": {
+        definition: "{{ item.data.definition }}",
+        scaffold: "{{ item.data.scaffold }}",
+      },{% endfor %}
+    },
+  "external": {
+    activity: "External Resources",
+    type: "Investigative",
+    patterns: { {% for item in collections.external | sort(false, false, 'data.pattern' )%}
+      "{{ item.data.pattern }}": {
+        definition: "{{ item.data.definition }}",
+        scaffold: "{{ item.data.scaffold }}",
+      },{% endfor %}
+    },
+  "practice": {
+    activity: "Practice",
+    type: "Formative",
+    patterns: { {% for item in collections.practice | sort(false, false, 'data.pattern' )%}
+      "{{ item.data.pattern }}": {
+      definition: "{{ item.data.definition }}",
+      scaffold: "{{ item.data.scaffold }}",
+    },{% endfor %}
+  },
+  "discussion": {
+    activity: "Discussion",
+    type: "Discursive",
+    patterns: { {% for item in collections.discussion | sort(false, false, 'data.pattern' )%}
+      "{{ item.data.pattern }}": {
+        definition: "{{ item.data.definition }}",
+        scaffold: "{{ item.data.scaffold }}",
+      },{% endfor %}
+  },
+  "assessment": {
+    activity: "Assessment",
+    type: "Productive",
+    patterns: { {% for item in collections.assessment | sort(false, false, 'data.pattern' )%}
+      "{{ item.data.pattern }}": {
+        definition: "{{ item.data.definition }}",
+        scaffold: "{{ item.data.scaffold }}",
+      },{% endfor %}
+  },
+  "review": {
+    activity: "Review",
+    type: "Evaluative",
+    patterns: { {% for item in collections.review | sort(false, false, 'data.pattern' )%}
+      "{{ item.data.pattern }}": {
+        definition: "{{ item.data.definition }}",
+        scaffold: "{{ item.data.scaffold }}",
+      },{% endfor %}
+  },
+  "interactive": {
+    activity: "Interactive",
+    type: "Social",
+    patterns: { {% for item in collections.interactive | sort(false, false, 'data.pattern' )%}
+      "{{ item.data.pattern }}": {
+        definition: "{{ item.data.definition }}",
+        scaffold: "{{ item.data.scaffold }}",
+      },{% endfor %}
+    },
+  },
+}
