@@ -1,17 +1,17 @@
 ---
-activity: ["assessment"]
-tags: ["assessment"]
-type: ["productive"]
-pattern: ["evidence Collection"]
-status: [""]
-definition: ["Structured collection of learning. "]
-scaffold: ["Examples:
+activity: "assessment"
+tags: "assessment"
+type: "productive"
+pattern: "evidence collection"
+status: "live"
+definition: "Structured collection of learning."
+scaffold: "Examples:
 - journal
 - logbook
 - portfolio
 - interview
 - workbook
-- notebook"]
+- notebook"
 
 ---
 

@@ -1,15 +1,15 @@
 ---
-activity: ["assessment"]
-tags: ["assessment"]
-type: ["productive"]
-pattern: ["planning"]
-status: [""]
-definition: ["Proposed actions or achievements. "]
-scaffold: ["Examples:
+activity: "assessment"
+tags: "assessment"
+type: "productive"
+pattern: "planning"
+status: ""
+definition: "Proposed actions or achievements."
+scaffold: "Examples:
 - proposal
 - design
 - strategy
-- storyboard"]
+- storyboard"
 ---
 
 Examples:

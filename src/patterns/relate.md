@@ -1,11 +1,11 @@
 ---
-activity: ["external"]
-tags: ["external"]
-type: ["investigative"]
-pattern: ["relate"]
-status: [""]
-definition: ["Requires students to place this resource into their understanding of the topic. "]
-scaffold: ["The aim here is for the learner to Relate an external resource to the topic being studied or connect it with their existing knowledge or practice. Instead of just consuming a resource, the aim is to create an activity that helps the learner contextualise the resource more broadly. Typically, learners are told to consider the topic as they work through an external resource that has been chosen specifically to relate to the current topic. The aim here, however, is to ask learners to create that relationship, which means the resource should be a little left-field. Rather than being directly related or from the established literature, the resource may be an example of theory in practice, a concept's execution, or a recent news article. Learners will have to work to relate the resource to the topic at hand. Ideally, this activity would be followed by an Interactive activity. This subsequent activity would allow learners to communicate with their instructor or peers about their understanding of the relevance of the resource to the topic."]
+activity: "external"
+tags: "external"
+type: "investigative"
+pattern: "relate"
+status: ""
+definition: "Requires students to place this resource into their understanding of the topic."
+scaffold: "The aim here is for the learner to Relate an external resource to the topic being studied or connect it with their existing knowledge or practice. Instead of just consuming a resource, the aim is to create an activity that helps the learner contextualise the resource more broadly. Typically, learners are told to consider the topic as they work through an external resource that has been chosen specifically to relate to the current topic. The aim here, however, is to ask learners to create that relationship, which means the resource should be a little left-field. Rather than being directly related or from the established literature, the resource may be an example of theory in practice, a concept's execution, or a recent news article. Learners will have to work to relate the resource to the topic at hand. Ideally, this activity would be followed by an Interactive activity. This subsequent activity would allow learners to communicate with their instructor or peers about their understanding of the relevance of the resource to the topic."
 ---
 
 The aim here is for the learner to Relate an external resource to the topic being studied or connect it with their existing knowledge or practice. Instead of just consuming a resource, the aim is to create an activity that helps the learner contextualise the resource more broadly. Typically, learners are told to consider the topic as they work through an external resource that has been chosen specifically to relate to the current topic. The aim here, however, is to ask learners to create that relationship, which means the resource should be a little left-field. Rather than being directly related or from the established literature, the resource may be an example of theory in practice, a concept's execution, or a recent news article. Learners will have to work to relate the resource to the topic at hand. Ideally, this activity would be followed by an Interactive activity. This subsequent activity would allow learners to communicate with their instructor or peers about their understanding of the relevance of the resource to the topic.

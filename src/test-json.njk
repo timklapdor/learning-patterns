@@ -7,7 +7,7 @@ permalink: lp.json
     activity: "Course Content",
     type: "Assimilative",
     patterns: { {% for item in collections.content | sort(false, false, 'data.pattern' )%}
-      "{{ item.data.pattern }}": {
+      "{{ item.data.pattern | capitalize }}": {
         definition: "{{ item.data.definition }}",
         scaffold: "{{ item.data.scaffold }}",
       },{% endfor %}
@@ -16,7 +16,7 @@ permalink: lp.json
     activity: "External Resources",
     type: "Investigative",
     patterns: { {% for item in collections.external | sort(false, false, 'data.pattern' )%}
-      "{{ item.data.pattern }}": {
+      "{{ item.data.pattern | capitalize }}": {
         definition: "{{ item.data.definition }}",
         scaffold: "{{ item.data.scaffold }}",
       },{% endfor %}
@@ -25,7 +25,7 @@ permalink: lp.json
     activity: "Practice",
     type: "Formative",
     patterns: { {% for item in collections.practice | sort(false, false, 'data.pattern' )%}
-      "{{ item.data.pattern }}": {
+      "{{ item.data.pattern | capitalize }}": {
       definition: "{{ item.data.definition }}",
       scaffold: "{{ item.data.scaffold }}",
     },{% endfor %}
@@ -34,7 +34,7 @@ permalink: lp.json
     activity: "Discussion",
     type: "Discursive",
     patterns: { {% for item in collections.discussion | sort(false, false, 'data.pattern' )%}
-      "{{ item.data.pattern }}": {
+      "{{ item.data.pattern | capitalize }}": {
         definition: "{{ item.data.definition }}",
         scaffold: "{{ item.data.scaffold }}",
       },{% endfor %}
@@ -43,7 +43,7 @@ permalink: lp.json
     activity: "Assessment",
     type: "Productive",
     patterns: { {% for item in collections.assessment | sort(false, false, 'data.pattern' )%}
-      "{{ item.data.pattern }}": {
+      "{{ item.data.pattern | capitalize }}": {
         definition: "{{ item.data.definition }}",
         scaffold: "{{ item.data.scaffold }}",
       },{% endfor %}
@@ -52,7 +52,7 @@ permalink: lp.json
     activity: "Review",
     type: "Evaluative",
     patterns: { {% for item in collections.review | sort(false, false, 'data.pattern' )%}
-      "{{ item.data.pattern }}": {
+      "{{ item.data.pattern | capitalize }}": {
         definition: "{{ item.data.definition }}",
         scaffold: "{{ item.data.scaffold }}",
       },{% endfor %}
@@ -61,7 +61,7 @@ permalink: lp.json
     activity: "Interactive",
     type: "Social",
     patterns: { {% for item in collections.interactive | sort(false, false, 'data.pattern' )%}
-      "{{ item.data.pattern }}": {
+      "{{ item.data.pattern | capitalize }}": {
         definition: "{{ item.data.definition }}",
         scaffold: "{{ item.data.scaffold }}",
       },{% endfor %}

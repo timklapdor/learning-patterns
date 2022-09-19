@@ -1,11 +1,11 @@
 ---
-activity: ["review"]
-tags: ["review"]
-type: ["evaluative"]
-pattern: ["task Feedback"]
-status: [""]
-definition: ["Provide learners with directly implementable feedback on a task so they can directly address the feedback and improve their work."]
-scaffold: ["Feedback is vital to personal development, and each individual can benefit from it when done correctly. It is essential to understand that feedback, by its nature, is a cyclical process rather than linear. This means that feedback shouldn't be the end point of a task and instead occur before the last step so it can be actioned and implemented. One common problem with assessments is that the learner focuses on the marks rather than the journey they go through and the evolution of their work. We often consciously make feedback disposable in that sense and secondary to the marks attached because there is no follow-through. At the course design stage, it is essential to consider how formative and summative assessments can work together and how a review task like task feedback can feed into a subsequent assessment where marks are attached. Consider pairing review tasks, like task feedback, with productive assessments so that marks are given to actioning feedback and improving the work done by students."]
+activity: "review"
+tags: "review"
+type: "evaluative"
+pattern: "task Feedback"
+status: ""
+definition: "Provide learners with directly implementable feedback on a task so they can directly address the feedback and improve their work."
+scaffold: "Feedback is vital to personal development, and each individual can benefit from it when done correctly. It is essential to understand that feedback, by its nature, is a cyclical process rather than linear. This means that feedback shouldn't be the end point of a task and instead occur before the last step so it can be actioned and implemented. One common problem with assessments is that the learner focuses on the marks rather than the journey they go through and the evolution of their work. We often consciously make feedback disposable in that sense and secondary to the marks attached because there is no follow-through. At the course design stage, it is essential to consider how formative and summative assessments can work together and how a review task like task feedback can feed into a subsequent assessment where marks are attached. Consider pairing review tasks, like task feedback, with productive assessments so that marks are given to actioning feedback and improving the work done by students."
 ---
 
 Feedback is vital to personal development, and each individual can benefit from it when done correctly. It is essential to understand that feedback, by its nature, is a cyclical process rather than linear. This means that feedback shouldn't be the end point of a task and instead occur before the last step so it can be actioned and implemented. One common problem with assessments is that the learner focuses on the marks rather than the journey they go through and the evolution of their work. We often consciously make feedback disposable in that sense and secondary to the marks attached because there is no follow-through. At the course design stage, it is essential to consider how formative and summative assessments can work together and how a review task like task feedback can feed into a subsequent assessment where marks are attached. Consider pairing review tasks, like task feedback, with productive assessments so that marks are given to actioning feedback and improving the work done by students.

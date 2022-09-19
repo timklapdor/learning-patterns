@@ -1,17 +1,17 @@
 ---
-activity: ["assessment"]
-tags: ["assessment"]
-type: ["productive"]
-pattern: ["presentation"]
-status: [""]
-definition: ["Speech or talk to an audience. "]
-scaffold: ["Examples:
+activity: "assessment"
+tags: "assessment"
+type: "productive"
+pattern: "presentation"
+status: ""
+definition: "Speech or talk to an audience."
+scaffold: "Examples:
 - speech
 - debate
 - pitch
 - lecture
 - seminar
-- viva-voce"]
+- viva-voce"
 ---
 
 Examples:

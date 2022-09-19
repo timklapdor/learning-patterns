@@ -1,16 +1,16 @@
 ---
-activity: ["assessment"]
-tags: ["assessment"]
-type: ["productive"]
-pattern: ["participation"]
-status: [""]
-definition: ["Involvement and activity measurements. "]
-scaffold: ["Examples:
+activity: "assessment"
+tags: "assessment"
+type: "productive"
+pattern: "participation"
+status: ""
+definition: "Involvement and activity measurements."
+scaffold: "Examples:
 - attendance
 - activity participation
 - wiki/forum postings
 - workshop involvement
-- group work"]
+- group work"
 ---
 
 Examples:

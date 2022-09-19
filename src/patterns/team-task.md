@@ -1,11 +1,11 @@
 ---
-activity: ["interactive"]
-tags: ["interactive"]
-type: ["social"]
-pattern: ["team Task"]
-status: [""]
-definition: ["A small group of students work together to complete a shared task which requires students to collaborate and create a consensus to achieve a set outcome."]
-scaffold: ["A Team Task requires learners to work together, build consensus and create a shared body of work. Some good examples of tasks that would be suitable would include; working through a problem, example or case study; contributing to a document or shared response; or creating a list of resources, papers and literature. These kinds of tasks can work as asynchronous and synchronous tasks and are helpful for low-stakes work and getting students used to learning in a social context. These tasks must be scaffolded and provide learners with clear instructions and roles, especially when introduced to students. If these tasks are used consistently throughout a course or program, you can reduce these explicit instructions as learners become used to this way of working and self-organise. It is important to note that regardless of the level of study, you should treat each group of students as novices when it comes to this kind of task. Knowledge and experiences of teamwork apply to specific groups, and what works in one group may not transfer to another."]
+activity: "interactive"
+tags: "interactive"
+type: "social"
+pattern: "team Task"
+status: ""
+definition: "A small group of students work together to complete a shared task which requires students to collaborate and create a consensus to achieve a set outcome."
+scaffold: "A Team Task requires learners to work together, build consensus and create a shared body of work. Some good examples of tasks that would be suitable would include; working through a problem, example or case study; contributing to a document or shared response; or creating a list of resources, papers and literature. These kinds of tasks can work as asynchronous and synchronous tasks and are helpful for low-stakes work and getting students used to learning in a social context. These tasks must be scaffolded and provide learners with clear instructions and roles, especially when introduced to students. If these tasks are used consistently throughout a course or program, you can reduce these explicit instructions as learners become used to this way of working and self-organise. It is important to note that regardless of the level of study, you should treat each group of students as novices when it comes to this kind of task. Knowledge and experiences of teamwork apply to specific groups, and what works in one group may not transfer to another."
 ---
 
 A Team Task requires learners to work together, build consensus and create a shared body of work. Some good examples of tasks that would be suitable would include; working through a problem, example or case study; contributing to a document or shared response; or creating a list of resources, papers and literature. These kinds of tasks can work as asynchronous and synchronous tasks and are helpful for low-stakes work and getting students used to learning in a social context. These tasks must be scaffolded and provide learners with clear instructions and roles, especially when introduced to students. If these tasks are used consistently throughout a course or program, you can reduce these explicit instructions as learners become used to this way of working and self-organise. It is important to note that regardless of the level of study, you should treat each group of students as novices when it comes to this kind of task. Knowledge and experiences of teamwork apply to specific groups, and what works in one group may not transfer to another.

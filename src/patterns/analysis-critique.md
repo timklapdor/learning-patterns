@@ -1,17 +1,17 @@
 ---
-activity: ["assessment"]
-tags: ["assessment"]
-type: ["productive"]
-pattern: ["analysis & critique"]
-status: [""]
-definition: ["Offering interpretation of information."]
-scaffold: ["Examples:
+activity: "assessment"
+tags: "assessment"
+type: "productive"
+pattern: "analysis & critique"
+status: "live"
+definition: "Offering interpretation of information."
+scaffold: "Examples:
 - essay
 - thesis
 - dissertation
 - review
 - data analysis
-- review of peers"]
+- review of peers"
 ---
 
 Examples:

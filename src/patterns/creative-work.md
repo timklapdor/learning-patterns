@@ -1,11 +1,11 @@
 ---
-activity: ["assessment"]
-tags: ["assessment"]
-type: ["productive"]
-pattern: ["creative work"]
-status: [""]
-definition: ["Manifestation of creative effort as artefact."]
-scaffold: ["Examples:
+activity: "assessment"
+tags: "assessment"
+type: "productive"
+pattern: "creative work"
+status: "live"
+definition: "Manifestation of creative effort as artefact."
+scaffold: "Examples:
 - performance
 - poetry
 - fiction
@@ -15,7 +15,7 @@ scaffold: ["Examples:
 - audio
 - poster
 - website
-- animation & modelling"]
+- animation & modelling"
 ---
 
 Examples:
