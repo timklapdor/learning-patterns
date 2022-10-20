@@ -1,3 +1,5 @@
+![Git-Social](https://user-images.githubusercontent.com/4554100/196832490-ccf31bba-5460-4fc4-a54a-6811f3ef05e8.png)
+
 # Welcome to Learning Patterns
 
 These patterns are based on the concept of a _Pattern Language_ and provide a way to structure and create learning activities. 
