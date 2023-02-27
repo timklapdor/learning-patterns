@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="{{ 'css/style.css' | url }}" />
+	<!-- Matomo -->
+	<script>
+	  var _paq = window._paq = window._paq || [];
+	  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u="//timklapdor.me/analytics/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', '1']);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<!-- End Matomo Code -->
+
+
+</head>
+<body id="builder">
+	<header>
+		<h1>{{ title }}</h1>
+
+		{% if filter %}
+		<div class="filters" id="myBtnContainer">
+			<button type="button" class="btn all" onclick="filterSelection('all')">all</button>
+			<button type="button" class="btn content" onclick="filterSelection('content')">content</button>
+			<button type="button" class="btn external" onclick="filterSelection('external')">external</button>
+			<button type="button" class="btn discussion" onclick="filterSelection('discussion')">discussion</button>
+			<button type="button" class="btn practice" onclick="filterSelection('practice')">practice</button>
+			<button type="button" class="btn assessment" onclick="filterSelection('assessment')">assessment</button>
+			<button type="button" class="btn review" onclick="filterSelection('review')">review</button>
+			<button type="button" class="btn interactive" onclick="filterSelection('interactive')">interactive</button>
+		</div>
+		{% endif %}
+	</header>
+	<main>
+		<aside>
+			<h3>Create a Lesson</h3>
+			<ul id="target" class="patterns teaser"> 
+
+			</ul>	
+		</aside>
+		<article>
+			{{ content | safe }}
+		</article>
+	
+	</main>
+
+<script>
+
+const sourceDiv = document.getElementById("source");
+const filterDivs = sourceDiv.querySelectorAll(".filterDiv");
+
+	
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = filterDivs;
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("filters");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+<script> 
+const sourceList = document.getElementById('source');
+const targetList = document.getElementById('target');
+let draggedItem = null;
+
+// Add event listener for dragstart on the source list items
+sourceList.addEventListener('dragstart', function(e) {
+  draggedItem = e.target.cloneNode(true);
+});
+
+// Add event listener for dragover on the target list
+targetList.addEventListener('dragover', function(e) {
+  e.preventDefault();
+});
+
+// Add event listener for drop on the target list
+targetList.addEventListener('drop', function(e) {
+  e.preventDefault();
+  targetList.appendChild(draggedItem);
+  draggedItem = null;
+});
+
+// Add event listener for dragstart on the target list items
+targetList.addEventListener('dragstart', function(e) {
+  draggedItem = e.target;
+  e.dataTransfer.effectAllowed = 'move';
+});
+
+// Add event listener for dragover on the target list items
+targetList.addEventListener('dragover', function(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+  const targetItem = e.target.closest('li');
+  if (targetItem && draggedItem !== targetItem) {
+    targetList.insertBefore(draggedItem, targetItem.nextSibling);
+  }
+});
+
+// Add event listener for dragend on the target list items
+targetList.addEventListener('dragend', function(e) {
+  draggedItem = null;
+});
+
+</script>
+
+
+</body>
+</html>

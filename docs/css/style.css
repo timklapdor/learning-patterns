@@ -382,3 +382,56 @@ div.filters button.interactive {
 div.filters button.interactive:hover {
   background: #69bba2;
 }
+
+#builder main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#builder aside {
+  grid-column: 1/span 1;
+  padding: 1ch;
+}
+#builder aside ul {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(2ch, 10ch));
+  min-height: 50vh;
+  border: 1px dashed #999;
+  list-style: none;
+}
+#builder aside ul li p {
+  visibility: hidden;
+}
+#builder aside ul li.content {
+  border-top: solid 1px #4cc9f0;
+  border-left: solid 2ch #4cc9f0;
+}
+#builder aside ul li.external {
+  border-top: solid 1px #c373f9;
+  border-left: solid 2ch #c373f9;
+}
+#builder aside ul li.discussion {
+  border-top: solid 1px #fa6769;
+  border-left: solid 2ch #fa6769;
+}
+#builder aside ul li.practice {
+  border-top: solid 1px #f8961e;
+  border-left: solid 2ch #f8961e;
+}
+#builder aside ul li.assessment {
+  border-top: solid 1px #f9c74f;
+  border-left: solid 2ch #f9c74f;
+}
+#builder aside ul li.review {
+  border-top: solid 1px #90be6d;
+  border-left: solid 2ch #90be6d;
+}
+#builder aside ul li.interactive {
+  border-top: solid 1px #43aa8b;
+  border-left: solid 2ch #43aa8b;
+}
+#builder article {
+  grid-column: 2/span 3;
+}
+#builder .drag-over {
+  border-color: red;
+}

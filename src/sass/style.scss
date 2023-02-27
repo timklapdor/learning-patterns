@@ -351,3 +351,61 @@ div.filters {
       }
     }
 }
+#builder {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  aside {
+    grid-column: 1 / span 1;
+    padding: 1ch;
+    ul { 
+      display: grid;
+      grid-template-rows: repeat(auto-fit, minmax(2ch, 10ch));
+      min-height: 50vh;
+      border: 1px dashed #999;
+      list-style: none;
+
+      li {
+        p {
+        visibility: hidden;
+        }
+
+        &.content {
+          border-top: solid 1px $ld-1;
+          border-left: solid 2ch $ld-1;
+          }
+        &.external {
+          border-top: solid 1px $ld-7;
+          border-left: solid 2ch $ld-7;
+          }
+        &.discussion {
+          border-top: solid 1px $ld-2;
+          border-left: solid 2ch $ld-2;
+          }
+        &.practice {
+          border-top: solid 1px $ld-3;
+          border-left: solid 2ch $ld-3;
+          }
+        &.assessment {
+          border-top: solid 1px $ld-4;
+          border-left: solid 2ch $ld-4;
+          }
+        &.review {
+          border-top: solid 1px $ld-5;
+          border-left: solid 2ch $ld-5;
+          }
+        &.interactive {
+          border-top: solid 1px $ld-6;
+          border-left: solid 2ch $ld-6;
+          }
+      }
+    }
+  }
+  article {
+  grid-column: 2 / span 3;
+  }
+  .drag-over {
+    border-color: red;
+  }
+}

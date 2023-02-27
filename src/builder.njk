@@ -1,0 +1,52 @@
+---
+layout: builder.njk
+title: Lesson Buiilder
+filter: testing
+permalink: builder.html
+---
+
+<ul id="source" class="patterns teaser">
+
+{% for item in collections.content | sort(false, false, 'data.pattern' )%}
+  <li draggable="true" data-id="{{ item.data.pattern }}" class="filterDiv {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></li>
+{% endfor %}
+
+{% for item in collections.external | sort(false, false, 'data.pattern' )%}
+  <li draggable="true" data-id="{{ item.data.pattern }}" class="filterDiv {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></li>
+{% endfor %}
+
+{% for item in collections.discussion | sort(false, false, 'data.pattern' )%}
+  <li draggable="true" data-id="{{ item.data.pattern }}" class="filterDiv {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></li>
+{% endfor %}
+
+{% for item in collections.practice | sort(false, false, 'data.pattern' )%}
+  <li draggable="true" data-id="{{ item.data.pattern }}" class="filterDiv {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></li>
+{% endfor %}
+
+{% for item in collections.assessment | sort(false, false, 'data.pattern' )%}
+  <li draggable="true" data-id="{{ item.data.pattern }}" class="filterDiv {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></li>
+{% endfor %}
+
+{% for item in collections.review | sort(false, false, 'data.pattern' )%}
+  <li draggable="true" data-id="{{ item.data.pattern }}" class="filterDiv {{ item.data.activity }}">
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></li>
+{% endfor %}
+
+{% for item in collections.interactive | sort(false, false, 'data.pattern' )%}
+  <li draggable="true" data-id="{{ item.data.pattern }}"  class="filterDiv {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <p>{{ item.data.definition }}</p></li>
+{% endfor %}
+
+</ul>
