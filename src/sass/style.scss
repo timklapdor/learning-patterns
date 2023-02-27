@@ -404,6 +404,9 @@ div.filters {
   }
   article {
   grid-column: 2 / span 3;
+  ul li {
+    cursor: grab;
+  }
   }
   .drag-over {
     border-color: red;

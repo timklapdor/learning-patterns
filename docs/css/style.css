@@ -432,6 +432,9 @@ div.filters button.interactive:hover {
 #builder article {
   grid-column: 2/span 3;
 }
+#builder article ul li {
+  cursor: grab;
+}
 #builder .drag-over {
   border-color: red;
 }
