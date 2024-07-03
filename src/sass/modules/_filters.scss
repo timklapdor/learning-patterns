@@ -1,0 +1,82 @@
+div.filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 2ch 0;
+
+    h4 {
+        text-transform: uppercase;
+        font-size: .8em;
+        padding: .5ch 1ch;
+        margin: .5ch;
+        color: light-dark(var(--page-dark), var(--page-light));
+        flex: 2 1 100%;
+    }
+  
+      button {
+        text-transform: uppercase;
+        border: none;
+        padding: .5ch 1ch;
+        border-radius: .7ch;
+        margin: .5ch;
+        color: light-dark(var(--page-dark), var(--page-light));
+
+        &.all {
+            background-color: light-dark(var(--shade-150), var(--shade-600));
+            &:hover { background: light-dark(var(--shade-300), var(--shade-300));}
+            &.active {background-color: light-dark(var(--shade-150), var(--shade-150));}
+            cursor:pointer;
+        }
+
+
+        &.content {
+            background-color: light-dark(var(--p10-1-200), var(--p10-1-800));
+            &:hover { background: light-dark(var(--p10-1-400), var(--p10-1-600));}
+            &.active {background-color: light-dark(var(--p10-1-200), var(--p10-1-800));}
+            cursor:pointer;
+        }
+
+        &.external {
+            background-color: light-dark(var(--p10-7-200), var(--p10-7-800));
+            &:hover {background-color: light-dark(var(--p10-7-400), var(--p10-7-600));}
+            &.active {background-color: light-dark(var(--p10-7-200), var(--p10-7-800));}
+            cursor:pointer;
+        }
+
+        &.discussion {
+            background-color: light-dark(var(--p10-2-200), var(--p10-2-800));
+            &:hover {background-color: light-dark(var(--p10-2-400), var(--p10-2-600));}
+            &.active {background-color: light-dark(var(--p10-2-200), var(--p10-2-800));}
+            cursor:pointer;
+        }
+
+        &.practice {
+            background-color: light-dark(var(--p10-3-200), var(--p10-3-800));
+            &:hover {background-color: light-dark(var(--p10-3-400), var(--p10-3-600));}
+            &.active {background-color: light-dark(var(--p10-3-200), var(--p10-3-800));}
+            cursor:pointer;
+        }
+
+        &.assessment {
+            background-color: light-dark(var(--p10-4-200), var(--p10-4-800));
+            &:hover {background-color: light-dark(var(--p10-4-400), var(--p10-4-600));}
+            &.active {background-color: light-dark(var(--p10-4-200), var(--p10-4-800));}
+            cursor:pointer;
+        }
+
+        &.review {
+            background-color: light-dark(var(--p10-5-200), var(--p10-5-800));
+            &:hover {background-color: light-dark(var(--p10-5-400), var(--p10-5-600));}
+            &.active {background-color: light-dark(var(--p10-5-200), var(--p10-5-800));}
+            cursor:pointer;
+        }
+
+        &.interactive {
+            background-color: light-dark(var(--p10-6-200), var(--p10-6-800));
+            &:hover {background-color: light-dark(var(--p10-6-400), var(--p10-6-600));}
+            &.active {background-color: light-dark(var(--p10-6-200), var(--p10-6-800));}
+            cursor:pointer;
+        }
+      }
+  }

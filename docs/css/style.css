@@ -191,8 +191,7 @@ body ul.patterns.teaser {
 }
 body ul.patterns.teaser li {
   justify-content: flex-start;
-  display: none;
-  /* Hidden by default */
+  display: none; /* Hidden by default */
 }
 body ul.patterns.teaser li.show {
   display: block;

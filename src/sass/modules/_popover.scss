@@ -1,0 +1,38 @@
+:popover-open {
+    border-radius: 1ch;
+    width: 60vw !important;
+    height: 70vh !important;
+    overflow-y: scroll;
+    border: 0;
+    padding: 1.5rem;
+    width: 25ch;
+
+    h2 {text-transform: capitalize;}
+
+    &.content {
+      background: light-dark(var(--p10-1-300), var(--p10-1-700));
+    }
+
+    &.external {
+      background: light-dark(var(--p10-7-300), var(--p10-7-700));
+    }
+
+    &.discussion {
+      background: light-dark(var(--p10-2-300), var(--p10-2-700));}
+
+    &.practice {
+      background: light-dark(var(--p10-3-300), var(--p10-3-700));}
+
+    &.assessment {
+      background: light-dark(var(--p10-4-300), var(--p10-4-700));}
+
+    &.review {
+      background: light-dark(var(--p10-5-300), var(--p10-5-700));}
+
+    &.interactive {
+      background: light-dark(var(--p10-6-300), var(--p10-6-700));}
+    
+  &::backdrop {
+    background-color: rgba(0,0,0,0.75);
+  }
+}

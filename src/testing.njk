@@ -1,0 +1,164 @@
+---
+layout: new-base.njk
+title: Learning Patterns
+filter: testing
+permalink: test-index.html
+---
+
+<ul class="pattern-grid">
+
+{% for item in collections.content | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <header class="activity {{ item.data.activity }}">
+		<h3>{{ item.data.pattern }}</h3>
+		<p class="definition">{{ item.data.definition }}</p>
+
+	</header>
+      <ul class="details"> 
+      <li><span>Type </span> {{ item.data.type }}</li>
+      <li><span>Activity </span> {{ item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+    </ul>
+	<main class="{{item.data.activity }}">
+	{{ item.templateContent | safe }}
+	</main>
+  </div>
+</li>
+{% endfor %}
+
+{% for item in collections.external | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <header class="activity {{ item.data.activity }}">
+		<h3>{{ item.data.pattern }}</h3>
+		<p class="definition">{{ item.data.definition }}</p>
+
+	</header>
+      <ul class="details"> 
+      <li><span>Type </span> {{ item.data.type }}</li>
+      <li><span>Activity </span> {{ item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+    </ul>
+	<main class="{{item.data.activity }}">
+	{{ item.templateContent | safe }}
+	</main>
+  </div>
+</li>
+{% endfor %}
+
+{% for item in collections.discussion | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <header class="activity {{ item.data.activity }}">
+		<h3>{{ item.data.pattern }}</h3>
+		<p class="definition">{{ item.data.definition }}</p>
+
+	</header>
+      <ul class="details"> 
+      <li><span>Type </span> {{ item.data.type }}</li>
+      <li><span>Activity </span> {{ item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+    </ul>
+	<main class="{{item.data.activity }}">
+	{{ item.templateContent | safe }}
+	</main>
+  </div>
+</li>
+{% endfor %}
+
+{% for item in collections.practice | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <header class="activity {{ item.data.activity }}">
+		<h3>{{ item.data.pattern }}</h3>
+		<p class="definition">{{ item.data.definition }}</p>
+
+	</header>
+      <ul class="details"> 
+      <li><span>Type </span> {{ item.data.type }}</li>
+      <li><span>Activity </span> {{ item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+    </ul>
+	<main class="{{item.data.activity }}">
+	{{ item.templateContent | safe }}
+	</main>
+  </div>
+</li>
+{% endfor %}
+
+{% for item in collections.assessment | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <header class="activity {{ item.data.activity }}">
+		<h3>{{ item.data.pattern }}</h3>
+		<p class="definition">{{ item.data.definition }}</p>
+
+	</header>
+      <ul class="details"> 
+      <li><span>Type </span> {{ item.data.type }}</li>
+      <li><span>Activity </span> {{ item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+    </ul>
+	<main class="{{item.data.activity }}">
+	{{ item.templateContent | safe }}
+	</main>
+  </div>
+</li>
+{% endfor %}
+
+{% for item in collections.review | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <header class="activity {{ item.data.activity }}">
+		<h3>{{ item.data.pattern }}</h3>
+		<p class="definition">{{ item.data.definition }}</p>
+
+	</header>
+      <ul class="details"> 
+      <li><span>Type </span> {{ item.data.type }}</li>
+      <li><span>Activity </span> {{ item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+    </ul>
+	<main class="{{item.data.activity }}">
+	{{ item.templateContent | safe }}
+	</main>
+  </div>
+</li>
+{% endfor %}
+
+{% for item in collections.interactive | sort(false, false, 'data.pattern' )%}
+  <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
+    <h2>{{ item.data.pattern }}</h2>
+  <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <header class="activity {{ item.data.activity }}">
+		<h3>{{ item.data.pattern }}</h3>
+		<p class="definition">{{ item.data.definition }}</p>
+
+	</header>
+      <ul class="details"> 
+      <li><span>Type </span> {{ item.data.type }}</li>
+      <li><span>Activity </span> {{ item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+    </ul>
+	<main class="{{item.data.activity }}">
+	{{ item.templateContent | safe }}
+	</main>
+  </div>
+</li>
+{% endfor %}
+</ul>
+

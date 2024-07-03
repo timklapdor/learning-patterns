@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="{{ 'css/styles.css' | url }}" />
+
+	<!-- Matomo -->
+	<script>
+	  var _paq = window._paq = window._paq || [];
+	  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u="//timklapdor.me/analytics/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', '1']);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<!-- End Matomo Code -->
+
+
+</head>
+<body>
+	<header id="top">
+		<h1>New {{ title }}</h1>
+		<nav>
+			<a href="#">About</a> 
+			<a href="#">Theory</a>
+	</header>
+	<main>
+		{% if filter %}
+
+		<div class="filters" id="filters">
+			<h4>Learning Types</h4>
+			<button type="button" class="btn all" onclick="filterSelection('all')">all</button>
+			<button type="button" class="btn content" onclick="filterSelection('assimilative')">assimilative</button>
+			<button type="button" class="btn external" onclick="filterSelection('investigative')">investigative</button>
+			<button type="button" class="btn discussion" onclick="filterSelection('discursive')">discursive</button>
+			<button type="button" class="btn practice" onclick="filterSelection('formative')">formative</button>
+			<button type="button" class="btn assessment" onclick="filterSelection('productive')">productive</button>
+			<button type="button" class="btn review" onclick="filterSelection('evaluative')">evaluative</button>
+			<button type="button" class="btn interactive" onclick="filterSelection('social')">social</button>
+		</div>
+
+		<div class="filters" id="filters">
+			<h4>Activities</h4>
+			<button type="button" class="btn all" onclick="filterSelection('all')">all</button>
+			<button type="button" class="btn content" onclick="filterSelection('content')">content</button>
+			<button type="button" class="btn external" onclick="filterSelection('external')">external</button>
+			<button type="button" class="btn discussion" onclick="filterSelection('discussion')">discussion</button>
+			<button type="button" class="btn practice" onclick="filterSelection('practice')">practice</button>
+			<button type="button" class="btn assessment" onclick="filterSelection('assessment')">assessment</button>
+			<button type="button" class="btn review" onclick="filterSelection('review')">review</button>
+			<button type="button" class="btn interactive" onclick="filterSelection('interactive')">interactive</button>
+		</div>
+
+
+		{% endif %}
+
+	{{ content | safe }}
+	</main>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("filters");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+} 
+</script>
+
+</body>
+</html>
