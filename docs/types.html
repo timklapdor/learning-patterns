@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
-	<link rel="stylesheet" href="{{ 'css/styles.css' | url }}" />
-	<link rel="icon" type="image/svg+xml" href="{{ 'assets/favicon.svg' | url }}">
-	<link rel="icon" type="image/png" href="{{ 'assets/favicon.png' | url }}">
+	<title></title>
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
 
 	<!-- Matomo -->
 	<script>
@@ -28,44 +28,23 @@
 </head>
 <body>
 	<header id="top">
-		<h1>{{ title if title else 'Learning Patterns'}}</h1>
+		<h1>Learning Patterns</h1>
 		<nav>
-			<a href="{{ 'about.html' | url }}">About</a> 
-			<a href="{{ 'types.html' | url }}">Types</a>
-			<a href="{{ 'patterns.html' | url }}">Patterns</a>
+			<a href="about.html">About</a> 
+			<a href="types.html">Types</a>
+			<a href="patterns.html">Patterns</a>
 
 	</header>
 	<main>
-		{% if filter %}
+		
 
-		<div class="filters" id="filters">
-			<h4>Learning Types</h4>
-			<button type="button" class="btn all" onclick="filterSelection('all')">all</button>
-			<button type="button" class="btn content" onclick="filterSelection('assimilative')">assimilative</button>
-			<button type="button" class="btn external" onclick="filterSelection('investigative')">investigative</button>
-			<button type="button" class="btn discussion" onclick="filterSelection('discursive')">discursive</button>
-			<button type="button" class="btn practice" onclick="filterSelection('formative')">formative</button>
-			<button type="button" class="btn assessment" onclick="filterSelection('productive')">productive</button>
-			<button type="button" class="btn review" onclick="filterSelection('evaluative')">evaluative</button>
-			<button type="button" class="btn interactive" onclick="filterSelection('social')">social</button>
-		</div>
+	
+<section class="page"> 
+	<h2>About the Types of Learning</h2>
+<p>Welcome to the Learning Patterns website.</p>
+<p><img src="assets/favicon.svg" alt="Test"></p>
 
-		<div class="filters" id="filters">
-			<h4>Activities</h4>
-			<button type="button" class="btn all" onclick="filterSelection('all')">all</button>
-			<button type="button" class="btn content" onclick="filterSelection('content')">content</button>
-			<button type="button" class="btn external" onclick="filterSelection('external')">external</button>
-			<button type="button" class="btn discussion" onclick="filterSelection('discussion')">discussion</button>
-			<button type="button" class="btn practice" onclick="filterSelection('practice')">practice</button>
-			<button type="button" class="btn assessment" onclick="filterSelection('assessment')">assessment</button>
-			<button type="button" class="btn review" onclick="filterSelection('review')">review</button>
-			<button type="button" class="btn interactive" onclick="filterSelection('interactive')">interactive</button>
-		</div>
-
-
-		{% endif %}
-
-	{{ content | safe }}
+</section>
 	</main>
 
 <script>

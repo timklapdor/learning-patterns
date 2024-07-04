@@ -24,7 +24,7 @@ div.filters {
 
         &.all {
             background-color: light-dark(var(--shade-150), var(--shade-600));
-            &:hover { background: light-dark(var(--shade-300), var(--shade-300));}
+            &:hover, &:focus { background: light-dark(var(--shade-300), var(--shade-300));}
             &.active {background-color: light-dark(var(--shade-150), var(--shade-150));}
             cursor:pointer;
         }
@@ -32,28 +32,28 @@ div.filters {
 
         &.content {
             background-color: light-dark(var(--p10-1-200), var(--p10-1-800));
-            &:hover { background: light-dark(var(--p10-1-400), var(--p10-1-600));}
+            &:hover, &:focus { background: light-dark(var(--p10-1-400), var(--p10-1-600));}
             &.active {background-color: light-dark(var(--p10-1-200), var(--p10-1-800));}
             cursor:pointer;
         }
 
         &.external {
             background-color: light-dark(var(--p10-7-200), var(--p10-7-800));
-            &:hover {background-color: light-dark(var(--p10-7-400), var(--p10-7-600));}
+            &:hover, &:focus {background-color: light-dark(var(--p10-7-400), var(--p10-7-600));}
             &.active {background-color: light-dark(var(--p10-7-200), var(--p10-7-800));}
             cursor:pointer;
         }
 
         &.discussion {
             background-color: light-dark(var(--p10-2-200), var(--p10-2-800));
-            &:hover {background-color: light-dark(var(--p10-2-400), var(--p10-2-600));}
+            &:hover, &:focus {background-color: light-dark(var(--p10-2-400), var(--p10-2-600));}
             &.active {background-color: light-dark(var(--p10-2-200), var(--p10-2-800));}
             cursor:pointer;
         }
 
         &.practice {
             background-color: light-dark(var(--p10-3-200), var(--p10-3-800));
-            &:hover {background-color: light-dark(var(--p10-3-400), var(--p10-3-600));}
+            &:hover, &:focus {background-color: light-dark(var(--p10-3-400), var(--p10-3-600));}
             &.active {background-color: light-dark(var(--p10-3-200), var(--p10-3-800));}
             cursor:pointer;
         }
@@ -67,14 +67,14 @@ div.filters {
 
         &.review {
             background-color: light-dark(var(--p10-5-200), var(--p10-5-800));
-            &:hover {background-color: light-dark(var(--p10-5-400), var(--p10-5-600));}
+            &:hover, &:focus {background-color: light-dark(var(--p10-5-400), var(--p10-5-600));}
             &.active {background-color: light-dark(var(--p10-5-200), var(--p10-5-800));}
             cursor:pointer;
         }
 
         &.interactive {
             background-color: light-dark(var(--p10-6-200), var(--p10-6-800));
-            &:hover {background-color: light-dark(var(--p10-6-400), var(--p10-6-600));}
+            &:hover, &:focus {background-color: light-dark(var(--p10-6-400), var(--p10-6-600));}
             &.active {background-color: light-dark(var(--p10-6-200), var(--p10-6-800));}
             cursor:pointer;
         }

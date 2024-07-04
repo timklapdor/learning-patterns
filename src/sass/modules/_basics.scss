@@ -17,7 +17,12 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
 
+        h1 {
+            margin-bottom: .3ch;
+        }
+
         nav {
+            align-self: flex-end;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -28,12 +33,15 @@ body {
             align-items: stretch;
             text-transform: uppercase;
 
+
+
             a {
-                padding: 1em 2em;
+                padding: .5em .5em;
+                border-radius: .2em;
                 text-decoration: none;
                 color: light-dark(var(--page-dark), var(--page-light));
                 background-color: light-dark(var(--shade-150), var(--shade-600));
-                &:hover, &:focus { background: light-dark(var(--p10-3-juicy), var(--p10-3-juicy));}
+                &:hover, &:focus { background: light-dark(var(--shade-300), var(--shade-500));}
                 &.active {background-color: light-dark(var(--shade-150), var(--shade-150));}
                 margin: .5ch;
 

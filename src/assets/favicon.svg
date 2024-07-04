@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000"><svg id="SvgjsSvg1000" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffbe3d;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #c86dfd;
+      }
+
+      .cls-3 {
+        fill: #00b38c;
+      }
+
+      .cls-4 {
+        fill: #ff8c00;
+      }
+
+      .cls-5 {
+        fill: #83bc67;
+      }
+
+      .cls-6 {
+        fill: #ff5766;
+      }
+
+      .cls-7 {
+        fill: #00ccf0;
+      }
+    </style>
+  </defs>
+  <rect class="cls-6" x="50" y="528.21" width="429.31" height="183.39" rx="24" ry="24"></rect>
+  <rect class="cls-1" x="50" y="766.61" width="429.31" height="183.39" rx="24" ry="24"></rect>
+  <rect class="cls-7" x="50" y="50" width="429.31" height="421.79" rx="24" ry="24"></rect>
+  <rect class="cls-5" x="520.69" y="528.21" width="194.48" height="421.79" rx="24" ry="24"></rect>
+  <rect class="cls-4" x="755.52" y="528.21" width="194.48" height="421.79" rx="24" ry="24"></rect>
+  <rect class="cls-2" x="520.69" y="288.4" width="429.31" height="183.39" rx="24" ry="24"></rect>
+  <rect class="cls-3" x="520.69" y="50" width="429.31" height="183.39" rx="24" ry="24"></rect>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+</style></svg>

@@ -165,7 +165,11 @@ body header#top {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+body header#top h1 {
+  margin-bottom: 0.3ch;
+}
 body header#top nav {
+  align-self: flex-end;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -177,14 +181,15 @@ body header#top nav {
   text-transform: uppercase;
 }
 body header#top nav a {
-  padding: 1em 2em;
+  padding: 0.5em 0.5em;
+  border-radius: 0.2em;
   text-decoration: none;
   color: light-dark(var(--page-dark), var(--page-light));
   background-color: light-dark(var(--shade-150), var(--shade-600));
   margin: 0.5ch;
 }
 body header#top nav a:hover, body header#top nav a:focus {
-  background: light-dark(var(--p10-3-juicy), var(--p10-3-juicy));
+  background: light-dark(var(--shade-300), var(--shade-500));
 }
 body header#top nav a.active {
   background-color: light-dark(var(--shade-150), var(--shade-150));
@@ -217,7 +222,7 @@ div.filters button.all {
   background-color: light-dark(var(--shade-150), var(--shade-600));
   cursor: pointer;
 }
-div.filters button.all:hover {
+div.filters button.all:hover, div.filters button.all:focus {
   background: light-dark(var(--shade-300), var(--shade-300));
 }
 div.filters button.all.active {
@@ -227,7 +232,7 @@ div.filters button.content {
   background-color: light-dark(var(--p10-1-200), var(--p10-1-800));
   cursor: pointer;
 }
-div.filters button.content:hover {
+div.filters button.content:hover, div.filters button.content:focus {
   background: light-dark(var(--p10-1-400), var(--p10-1-600));
 }
 div.filters button.content.active {
@@ -237,7 +242,7 @@ div.filters button.external {
   background-color: light-dark(var(--p10-7-200), var(--p10-7-800));
   cursor: pointer;
 }
-div.filters button.external:hover {
+div.filters button.external:hover, div.filters button.external:focus {
   background-color: light-dark(var(--p10-7-400), var(--p10-7-600));
 }
 div.filters button.external.active {
@@ -247,7 +252,7 @@ div.filters button.discussion {
   background-color: light-dark(var(--p10-2-200), var(--p10-2-800));
   cursor: pointer;
 }
-div.filters button.discussion:hover {
+div.filters button.discussion:hover, div.filters button.discussion:focus {
   background-color: light-dark(var(--p10-2-400), var(--p10-2-600));
 }
 div.filters button.discussion.active {
@@ -257,7 +262,7 @@ div.filters button.practice {
   background-color: light-dark(var(--p10-3-200), var(--p10-3-800));
   cursor: pointer;
 }
-div.filters button.practice:hover {
+div.filters button.practice:hover, div.filters button.practice:focus {
   background-color: light-dark(var(--p10-3-400), var(--p10-3-600));
 }
 div.filters button.practice.active {
@@ -277,7 +282,7 @@ div.filters button.review {
   background-color: light-dark(var(--p10-5-200), var(--p10-5-800));
   cursor: pointer;
 }
-div.filters button.review:hover {
+div.filters button.review:hover, div.filters button.review:focus {
   background-color: light-dark(var(--p10-5-400), var(--p10-5-600));
 }
 div.filters button.review.active {
@@ -287,7 +292,7 @@ div.filters button.interactive {
   background-color: light-dark(var(--p10-6-200), var(--p10-6-800));
   cursor: pointer;
 }
-div.filters button.interactive:hover {
+div.filters button.interactive:hover, div.filters button.interactive:focus {
   background-color: light-dark(var(--p10-6-400), var(--p10-6-600));
 }
 div.filters button.interactive.active {
@@ -438,4 +443,23 @@ ul.pattern-grid li.interactive {
 }
 :popover-open::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+section.page {
+  display: grid;
+  grid-template-columns: 5vw 1fr 80ch 1fr 5vw;
+  gap: 1em;
+}
+section.page > * {
+  grid-column-start: 3;
+}
+section.page p:has(img) {
+  grid-column: 2/span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+section.page img {
+  width: 80vw;
 }
