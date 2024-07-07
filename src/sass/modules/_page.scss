@@ -1,7 +1,6 @@
-section.page {
+article.page {
     display: grid;
     grid-template-columns: 5vw 1fr 80ch 1fr 5vw;
-    gap: 1em;
 
     & > * {
         grid-column-start: 3;
@@ -17,6 +16,53 @@ section.page {
 
     img {
         width: 80vw;
+    }
+
+    blockquote {
+        font-size: 200%;
+        font-style: italic;
+        border-top: 2px dotted var(--p10-7-juicy);
+        border-bottom: 2px dotted var(--p10-7-juicy);
+        background-color: light-dark(var(--p10-7-200), var(--p10-7-700));
+        margin: 0;
+        padding: 1em;
+        
+    }
+
+    li {
+        padding: .4ch;
+    }
+
+    table {
+        border-collapse: collapse;
+
+
+        col {
+            width: 30%;
+        }
+
+        tr {
+            border-bottom: 1px solid light-dark(var(--blk), var(--rev));
+        }
+
+        tr:has(th) {
+            border: none;
+            background: none !important;
+        }
+
+        tr:nth-child(1) {background: light-dark(var(--p10-1-400), var(--p10-1-700));}
+        tr:nth-child(2) {background: light-dark(var(--p10-7-400), var(--p10-7-700));}
+        tr:nth-child(3) {background: light-dark(var(--p10-2-400), var(--p10-2-700));}
+        tr:nth-child(4) {background: light-dark(var(--p10-3-400), var(--p10-3-700));}
+        tr:nth-child(5) {background: light-dark(var(--p10-4-400), var(--p10-4-700));}
+        tr:nth-child(6) {background: light-dark(var(--p10-5-400), var(--p10-5-700));}
+        tr:nth-child(7) {background: light-dark(var(--p10-6-400), var(--p10-6-700));}
+
+        td {
+            font-size: 1.1em;
+            padding: 1.5ch 1ch;
+
+        }
     }
 
 }

@@ -6,6 +6,20 @@ body {
     flex-direction: column;
     padding: 2ch;
 
+    a { 
+       color: light-dark(var(--p10-1-600), var(--p10-1-400)); 
+
+       &:hover {
+        color: light-dark(var(--p10-1-700), var(--p10-1-500)); 
+       }
+
+       &:visited {
+        color: light-dark(var(--p10-7-700), var(--p10-7-500)); 
+       }
+    }
+
+    
+
 
     hr {
         color: light-dark(var(--blk), var(--rev));

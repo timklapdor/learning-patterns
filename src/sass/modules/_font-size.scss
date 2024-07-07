@@ -33,6 +33,10 @@ h1 {
     --fluid-type-max: 1.4rem;
   }
 
+  p, li {
+    line-height: 1.4;
+  }
+
   .light {
     font-weight: 300;
     letter-spacing: .1ch;
