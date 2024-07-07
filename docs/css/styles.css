@@ -1,0 +1,527 @@
+:root {
+  color-scheme: light dark;
+  --p10-1: hsl(189, 100%, 47%);
+  --p10-2: hsl(355, 100%, 67%);
+  --p10-3: hsl(33, 100%, 50%);
+  --p10-4: hsl(40, 100%, 62%);
+  --p10-5: hsl(100, 39%, 57%);
+  --p10-6: hsl(167, 100%, 35%);
+  --p10-7: hsl(278, 97%, 71%);
+  --p10-1-juicy: hsl(195, 100%, 46%);
+  --p10-2-juicy: hsl(358, 100%, 59%);
+  --p10-3-juicy: hsl(19, 100%, 50%);
+  --p10-4-juicy: hsl(34, 100%, 56%);
+  --p10-5-juicy: hsl(110, 50%, 41%);
+  --p10-6-juicy: hsl(153, 100%, 25%);
+  --p10-7-juicy: hsl(276, 95%, 60%);
+  --rev: #ffffff;
+  --blk: #100F0F;
+  --page-light: #E9E9E9;
+  --page-dark: #1C1B1A;
+  --shade-900:#282726;
+  --shade-800:#403E3C;
+  --shade-700:#575653;
+  --shade-600:#6F6E69;
+  --shade-500:#878580;
+  --shade-300:#B7B5AC;
+  --shade-200:#CECDC3;
+  --shade-150:#DAD8CE;
+  --shade-100:#E6E4D9;
+  --shade-50:#F2F0E5;
+  --p10-1-tint: color-mix(in srgb, var(--p10-1) 3%, white);
+  --p10-1-dark: color-mix(in srgb, var(--p10-1), black 90%);
+  --p10-1-100: color-mix(in srgb, var(--p10-1) 10%, white);
+  --p10-1-200: color-mix(in srgb, var(--p10-1) 25%, white);
+  --p10-1-300: color-mix(in srgb, var(--p10-1) 50%, white);
+  --p10-1-400: color-mix(in srgb, var(--p10-1) 75%, white);
+  --p10-1-500: var(--p10-1);
+  --p10-1-600: color-mix(in srgb, var(--p10-1), black 20%);
+  --p10-1-700: color-mix(in srgb, var(--p10-1), black 40%);
+  --p10-1-800: color-mix(in srgb, var(--p10-1), black 60%);
+  --p10-1-900: color-mix(in srgb, var(--p10-1), black 80%);
+  --p10-2-tint: color-mix(in srgb, var(--p10-2) 3%, white);
+  --p10-2-dark: color-mix(in srgb, var(--p10-2), black 90%);
+  --p10-2-100: color-mix(in srgb, var(--p10-2) 10%, white);
+  --p10-2-200: color-mix(in srgb, var(--p10-2) 25%, white);
+  --p10-2-300: color-mix(in srgb, var(--p10-2) 50%, white);
+  --p10-2-400: color-mix(in srgb, var(--p10-2) 75%, white);
+  --p10-2-500: var(--p10-2);
+  --p10-2-600: color-mix(in srgb, var(--p10-2), black 20%);
+  --p10-2-700: color-mix(in srgb, var(--p10-2), black 40%);
+  --p10-2-800: color-mix(in srgb, var(--p10-2), black 60%);
+  --p10-2-900: color-mix(in srgb, var(--p10-2), black 80%);
+  --p10-3-tint: color-mix(in srgb, var(--p10-3) 3%, white);
+  --p10-3-dark: color-mix(in srgb, var(--p10-3), black 90%);
+  --p10-3-100: color-mix(in srgb, var(--p10-3) 10%, white);
+  --p10-3-200: color-mix(in srgb, var(--p10-3) 25%, white);
+  --p10-3-300: color-mix(in srgb, var(--p10-3) 50%, white);
+  --p10-3-400: color-mix(in srgb, var(--p10-3) 75%, white);
+  --p10-3-500: var(--p10-3);
+  --p10-3-600: color-mix(in srgb, var(--p10-3), black 20%);
+  --p10-3-700: color-mix(in srgb, var(--p10-3), black 40%);
+  --p10-3-800: color-mix(in srgb, var(--p10-3), black 60%);
+  --p10-3-900: color-mix(in srgb, var(--p10-3), black 80%);
+  --p10-4-tint: color-mix(in srgb, var(--p10-4) 3%, white);
+  --p10-4-dark: color-mix(in srgb, var(--p10-4), black 90%);
+  --p10-4-100: color-mix(in srgb, var(--p10-4) 10%, white);
+  --p10-4-200: color-mix(in srgb, var(--p10-4) 25%, white);
+  --p10-4-300: color-mix(in srgb, var(--p10-4) 50%, white);
+  --p10-4-400: color-mix(in srgb, var(--p10-4) 75%, white);
+  --p10-4-500: var(--p10-4);
+  --p10-4-600: color-mix(in srgb, var(--p10-4), black 20%);
+  --p10-4-700: color-mix(in srgb, var(--p10-4), black 40%);
+  --p10-4-800: color-mix(in srgb, var(--p10-4), black 60%);
+  --p10-4-900: color-mix(in srgb, var(--p10-4), black 80%);
+  --p10-5-tint: color-mix(in srgb, var(--p10-5) 3%, white);
+  --p10-5-dark: color-mix(in srgb, var(--p10-5), black 90%);
+  --p10-5-100: color-mix(in srgb, var(--p10-5) 10%, white);
+  --p10-5-200: color-mix(in srgb, var(--p10-5) 25%, white);
+  --p10-5-300: color-mix(in srgb, var(--p10-5) 50%, white);
+  --p10-5-400: color-mix(in srgb, var(--p10-5) 75%, white);
+  --p10-5-500: var(--p10-5);
+  --p10-5-600: color-mix(in srgb, var(--p10-5), black 20%);
+  --p10-5-700: color-mix(in srgb, var(--p10-5), black 40%);
+  --p10-5-800: color-mix(in srgb, var(--p10-5), black 60%);
+  --p10-5-900: color-mix(in srgb, var(--p10-5), black 80%);
+  --p10-6-tint: color-mix(in srgb, var(--p10-6) 3%, white);
+  --p10-6-dark: color-mix(in srgb, var(--p10-6), black 90%);
+  --p10-6-100: color-mix(in srgb, var(--p10-6) 10%, white);
+  --p10-6-200: color-mix(in srgb, var(--p10-6) 25%, white);
+  --p10-6-300: color-mix(in srgb, var(--p10-6) 50%, white);
+  --p10-6-400: color-mix(in srgb, var(--p10-6) 75%, white);
+  --p10-6-500: var(--p10-6);
+  --p10-6-600: color-mix(in srgb, var(--p10-6), black 20%);
+  --p10-6-700: color-mix(in srgb, var(--p10-6), black 40%);
+  --p10-6-800: color-mix(in srgb, var(--p10-6), black 60%);
+  --p10-6-900: color-mix(in srgb, var(--p10-6), black 80%);
+  --p10-7-tint: color-mix(in srgb, var(--p10-7) 3%, white);
+  --p10-7-dark: color-mix(in srgb, var(--p10-7), black 90%);
+  --p10-7-100: color-mix(in srgb, var(--p10-7) 10%, white);
+  --p10-7-200: color-mix(in srgb, var(--p10-7) 25%, white);
+  --p10-7-300: color-mix(in srgb, var(--p10-7) 50%, white);
+  --p10-7-400: color-mix(in srgb, var(--p10-7) 75%, white);
+  --p10-7-500: var(--p10-7);
+  --p10-7-600: color-mix(in srgb, var(--p10-7), black 20%);
+  --p10-7-700: color-mix(in srgb, var(--p10-7), black 40%);
+  --p10-7-800: color-mix(in srgb, var(--p10-7), black 60%);
+  --p10-7-900: color-mix(in srgb, var(--p10-7), black 80%);
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  font-size: clamp(var(--fluid-type-min, 1rem), 1rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.2rem));
+}
+
+h1 {
+  --fluid-type-min: 2.5rem;
+  --fluid-type-max: 6rem;
+  --fluid-type-target: 5vw;
+  line-height: 1;
+}
+
+h2 {
+  --fluid-type-min: 1.5rem;
+  --fluid-type-target: 1.2vw;
+  --fluid-type-max: 2rem;
+  line-height: 1;
+}
+
+h3 {
+  --fluid-type-min: 1.5rem;
+  --fluid-type-max: 2.5rem;
+  line-height: 1;
+}
+
+h2,
+h3 {
+  max-width: 30ch;
+}
+
+h4 {
+  --fluid-type-min: 1.1rem;
+  --fluid-type-max: 1.4rem;
+}
+
+p, li {
+  line-height: 1.4;
+}
+
+.light {
+  font-weight: 300;
+  letter-spacing: 0.1ch;
+  color: var(--rev);
+  text-align: center;
+}
+
+body {
+  background-color: light-dark(var(--page-light), var(--page-dark));
+  color: light-dark(var(--shade-50, ) var(--shade-700));
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 2ch;
+}
+body a {
+  color: light-dark(var(--p10-1-600), var(--p10-1-400));
+}
+body a:hover {
+  color: light-dark(var(--p10-1-700), var(--p10-1-500));
+}
+body a:visited {
+  color: light-dark(var(--p10-7-700), var(--p10-7-500));
+}
+body hr {
+  color: light-dark(var(--blk), var(--rev));
+}
+body header#top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body header#top h1 {
+  margin-bottom: 0.3ch;
+}
+body header#top nav {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  padding: 0.8ch;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  text-transform: uppercase;
+}
+body header#top nav a {
+  padding: 0.5em 0.5em;
+  border-radius: 0.2em;
+  text-decoration: none;
+  color: light-dark(var(--page-dark), var(--page-light));
+  background-color: light-dark(var(--shade-150), var(--shade-600));
+  margin: 0.5ch;
+}
+body header#top nav a:hover, body header#top nav a:focus {
+  background: light-dark(var(--shade-300), var(--shade-500));
+}
+body header#top nav a.active {
+  background-color: light-dark(var(--shade-150), var(--shade-150));
+}
+
+div.filters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 2ch 0;
+}
+div.filters h4 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 0.5ch 1ch;
+  margin: 0.5ch;
+  color: light-dark(var(--page-dark), var(--page-light));
+  flex: 2 1 100%;
+}
+div.filters button {
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5ch 1ch;
+  border-radius: 0.7ch;
+  margin: 0.5ch;
+  color: light-dark(var(--page-dark), var(--page-light));
+}
+div.filters button.all {
+  background-color: light-dark(var(--shade-150), var(--shade-600));
+  cursor: pointer;
+}
+div.filters button.all:hover, div.filters button.all:focus {
+  background: light-dark(var(--shade-300), var(--shade-300));
+}
+div.filters button.all.active {
+  background-color: light-dark(var(--shade-150), var(--shade-150));
+}
+div.filters button.content {
+  background-color: light-dark(var(--p10-1-200), var(--p10-1-800));
+  cursor: pointer;
+}
+div.filters button.content:hover, div.filters button.content:focus {
+  background: light-dark(var(--p10-1-400), var(--p10-1-600));
+}
+div.filters button.content.active {
+  background-color: light-dark(var(--p10-1-200), var(--p10-1-800));
+}
+div.filters button.external {
+  background-color: light-dark(var(--p10-7-200), var(--p10-7-800));
+  cursor: pointer;
+}
+div.filters button.external:hover, div.filters button.external:focus {
+  background-color: light-dark(var(--p10-7-400), var(--p10-7-600));
+}
+div.filters button.external.active {
+  background-color: light-dark(var(--p10-7-200), var(--p10-7-800));
+}
+div.filters button.discussion {
+  background-color: light-dark(var(--p10-2-200), var(--p10-2-800));
+  cursor: pointer;
+}
+div.filters button.discussion:hover, div.filters button.discussion:focus {
+  background-color: light-dark(var(--p10-2-400), var(--p10-2-600));
+}
+div.filters button.discussion.active {
+  background-color: light-dark(var(--p10-2-200), var(--p10-2-800));
+}
+div.filters button.practice {
+  background-color: light-dark(var(--p10-3-200), var(--p10-3-800));
+  cursor: pointer;
+}
+div.filters button.practice:hover, div.filters button.practice:focus {
+  background-color: light-dark(var(--p10-3-400), var(--p10-3-600));
+}
+div.filters button.practice.active {
+  background-color: light-dark(var(--p10-3-200), var(--p10-3-800));
+}
+div.filters button.assessment {
+  background-color: light-dark(var(--p10-4-200), var(--p10-4-800));
+  cursor: pointer;
+}
+div.filters button.assessment:hover {
+  background-color: light-dark(var(--p10-4-400), var(--p10-4-600));
+}
+div.filters button.assessment.active {
+  background-color: light-dark(var(--p10-4-200), var(--p10-4-800));
+}
+div.filters button.review {
+  background-color: light-dark(var(--p10-5-200), var(--p10-5-800));
+  cursor: pointer;
+}
+div.filters button.review:hover, div.filters button.review:focus {
+  background-color: light-dark(var(--p10-5-400), var(--p10-5-600));
+}
+div.filters button.review.active {
+  background-color: light-dark(var(--p10-5-200), var(--p10-5-800));
+}
+div.filters button.interactive {
+  background-color: light-dark(var(--p10-6-200), var(--p10-6-800));
+  cursor: pointer;
+}
+div.filters button.interactive:hover, div.filters button.interactive:focus {
+  background-color: light-dark(var(--p10-6-400), var(--p10-6-600));
+}
+div.filters button.interactive.active {
+  background-color: light-dark(var(--p10-6-200), var(--p10-6-800));
+}
+
+ul.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  grid-auto-rows: minmax(100px, 1fr);
+  grid-gap: 1ch;
+  margin: 0;
+  padding: 0;
+}
+ul.pattern-grid li {
+  list-style: none;
+  padding: 1ch;
+  border-radius: 0.7ch;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none; /* Hidden by default */
+}
+ul.pattern-grid li.show {
+  display: flex;
+}
+ul.pattern-grid li header {
+  border-bottom: 1px solid light-dark(var(--blk), var(--rev));
+}
+ul.pattern-grid li header p {
+  font-size: 120%;
+}
+ul.pattern-grid li ul.details {
+  margin: 2ch 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+  border-bottom: 1px solid light-dark(var(--blk), var(--rev));
+}
+ul.pattern-grid li ul.details li {
+  padding: 0 0 2ch;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+ul.pattern-grid li ul.details li span {
+  text-transform: uppercase;
+  font-size: 60%;
+  font-weight: bold;
+}
+ul.pattern-grid li main > p {
+  margin-top: 3ch;
+}
+ul.pattern-grid li main {
+  display: flex;
+  flex-direction: column;
+}
+ul.pattern-grid li main ul {
+  display: block;
+}
+ul.pattern-grid li main ul li {
+  list-style-type: disc;
+  display: list-item;
+}
+ul.pattern-grid li main ol {
+  display: block;
+}
+ul.pattern-grid li main ol li {
+  list-style-type: decimal;
+  display: list-item;
+}
+ul.pattern-grid li button {
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5ch 1ch;
+  border-radius: 0.7ch;
+  margin: 0.5ch;
+  cursor: pointer;
+  width: fit-content;
+  align-self: end;
+  background-color: color-mix(in srgb, var(--blk) 10%, transparent);
+}
+ul.pattern-grid li h2 {
+  text-transform: capitalize;
+  font-size: 110%;
+}
+ul.pattern-grid li h3 {
+  text-transform: capitalize;
+  margin-bottom: 1ch;
+}
+ul.pattern-grid li.content {
+  background-color: light-dark(var(--p10-1-400), var(--p10-1-600));
+}
+ul.pattern-grid li.external {
+  background-color: light-dark(var(--p10-7-400), var(--p10-7-600));
+}
+ul.pattern-grid li.discussion {
+  background-color: light-dark(var(--p10-2-400), var(--p10-2-600));
+}
+ul.pattern-grid li.practice {
+  background-color: light-dark(var(--p10-3-400), var(--p10-3-600));
+}
+ul.pattern-grid li.assessment {
+  background-color: light-dark(var(--p10-4-400), var(--p10-4-600));
+}
+ul.pattern-grid li.review {
+  background-color: light-dark(var(--p10-5-400), var(--p10-5-600));
+}
+ul.pattern-grid li.interactive {
+  background-color: light-dark(var(--p10-6-400), var(--p10-6-600));
+}
+
+:popover-open {
+  border-radius: 1ch;
+  width: 60vw !important;
+  height: 70vh !important;
+  overflow-y: scroll;
+  border: 0;
+  padding: 1.5rem;
+  width: 25ch;
+}
+:popover-open h2 {
+  text-transform: capitalize;
+}
+:popover-open.content {
+  background: light-dark(var(--p10-1-300), var(--p10-1-700));
+}
+:popover-open.external {
+  background: light-dark(var(--p10-7-300), var(--p10-7-700));
+}
+:popover-open.discussion {
+  background: light-dark(var(--p10-2-300), var(--p10-2-700));
+}
+:popover-open.practice {
+  background: light-dark(var(--p10-3-300), var(--p10-3-700));
+}
+:popover-open.assessment {
+  background: light-dark(var(--p10-4-300), var(--p10-4-700));
+}
+:popover-open.review {
+  background: light-dark(var(--p10-5-300), var(--p10-5-700));
+}
+:popover-open.interactive {
+  background: light-dark(var(--p10-6-300), var(--p10-6-700));
+}
+:popover-open::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+article.page {
+  display: grid;
+  grid-template-columns: 5vw 1fr 80ch 1fr 5vw;
+}
+article.page > * {
+  grid-column-start: 3;
+}
+article.page p:has(img) {
+  grid-column: 2/span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+article.page img {
+  width: 80vw;
+}
+article.page blockquote {
+  font-size: 200%;
+  font-style: italic;
+  border-top: 2px dotted var(--p10-7-juicy);
+  border-bottom: 2px dotted var(--p10-7-juicy);
+  background-color: light-dark(var(--p10-7-200), var(--p10-7-700));
+  margin: 0;
+  padding: 1em;
+}
+article.page li {
+  padding: 0.4ch;
+}
+article.page table {
+  border-collapse: collapse;
+}
+article.page table col {
+  width: 30%;
+}
+article.page table tr {
+  border-bottom: 1px solid light-dark(var(--blk), var(--rev));
+}
+article.page table tr:has(th) {
+  border: none;
+  background: none !important;
+}
+article.page table tr:nth-child(1) {
+  background: light-dark(var(--p10-1-400), var(--p10-1-700));
+}
+article.page table tr:nth-child(2) {
+  background: light-dark(var(--p10-7-400), var(--p10-7-700));
+}
+article.page table tr:nth-child(3) {
+  background: light-dark(var(--p10-2-400), var(--p10-2-700));
+}
+article.page table tr:nth-child(4) {
+  background: light-dark(var(--p10-3-400), var(--p10-3-700));
+}
+article.page table tr:nth-child(5) {
+  background: light-dark(var(--p10-4-400), var(--p10-4-700));
+}
+article.page table tr:nth-child(6) {
+  background: light-dark(var(--p10-5-400), var(--p10-5-700));
+}
+article.page table tr:nth-child(7) {
+  background: light-dark(var(--p10-6-400), var(--p10-6-700));
+}
+article.page table td {
+  font-size: 1.1em;
+  padding: 1.5ch 1ch;
+}

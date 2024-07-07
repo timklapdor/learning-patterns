@@ -1,0 +1,439 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 2ch;
+}
+body nav {
+  text-align: center;
+  padding: 0.5ch 1ch;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90ch;
+  border-radius: 0.7ch 0.7ch 0 0;
+}
+body nav:before {
+  color: #000;
+  content: "←";
+}
+body nav a {
+  color: #000;
+  text-decoration: none;
+}
+body nav.content {
+  background: #4cc9f0;
+}
+body nav.external {
+  background: #c373f9;
+}
+body nav.discussion {
+  background: #fa6769;
+}
+body nav.practice {
+  background: #f8961e;
+}
+body nav.assessment {
+  background: #f9c74f;
+}
+body nav.review {
+  background: #90be6d;
+}
+body nav.interactive {
+  background: #43aa8b;
+}
+body ul.patterns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  grid-auto-rows: minmax(100px, 1fr);
+  grid-gap: 1ch;
+  margin: 0;
+  padding: 0;
+}
+body ul.patterns li {
+  list-style: none;
+  padding: 1ch;
+  border-radius: 0.7ch;
+  text-transform: capitalize;
+  font-size: 110%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body ul.patterns li::before {
+  display: block;
+  padding-bottom: 1ch;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 60%;
+  text-align: right;
+}
+body ul.patterns li a {
+  color: #000;
+  text-decoration: none;
+}
+body ul.patterns li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+body ul.patterns li.content {
+  background: #a6e4f8;
+  border: solid 1px #4cc9f0;
+  border-top: solid 2ch #4cc9f0;
+}
+body ul.patterns li.content::before {
+  content: "Content";
+  color: #266578;
+}
+body ul.patterns li.content:hover {
+  background: #82d9f5;
+}
+body ul.patterns li.external {
+  background: #e1b9fc;
+  border: solid 1px #c373f9;
+  border-top: solid 2ch #c373f9;
+}
+body ul.patterns li.external::before {
+  content: "External";
+  color: #623a7d;
+}
+body ul.patterns li.external:hover {
+  background: #d59dfb;
+}
+body ul.patterns li.discussion {
+  background: #fdb3b4;
+  border: solid 1px #fa6769;
+  border-top: solid 2ch #fa6769;
+}
+body ul.patterns li.discussion::before {
+  content: "discussion";
+  color: #7d3435;
+}
+body ul.patterns li.discussion:hover {
+  background: #fc9596;
+}
+body ul.patterns li.practice {
+  background: #fccb8f;
+  border: solid 1px #f8961e;
+  border-top: solid 2ch #f8961e;
+}
+body ul.patterns li.practice::before {
+  content: "practice";
+  color: #7c4b0f;
+}
+body ul.patterns li.practice:hover {
+  background: #fab662;
+}
+body ul.patterns li.assessment {
+  background: #fce3a7;
+  border: solid 1px #f9c74f;
+  border-top: solid 2ch #f9c74f;
+}
+body ul.patterns li.assessment::before {
+  content: "Assessment";
+  color: #7d6428;
+}
+body ul.patterns li.assessment:hover {
+  background: #fbd884;
+}
+body ul.patterns li.review {
+  background: #c8dfb6;
+  border: solid 1px #90be6d;
+  border-top: solid 2ch #90be6d;
+}
+body ul.patterns li.review::before {
+  content: "review";
+  color: #485f37;
+}
+body ul.patterns li.review:hover {
+  background: #b1d299;
+}
+body ul.patterns li.interactive {
+  background: #a1d5c5;
+  border: solid 1px #43aa8b;
+  border-top: solid 2ch #43aa8b;
+}
+body ul.patterns li.interactive::before {
+  content: "interactive";
+  color: #225546;
+}
+body ul.patterns li.interactive:hover {
+  background: #8eccb9;
+}
+body ul.patterns li.content + li.external {
+  grid-column-start: 1;
+}
+body ul.patterns li.external + li.discussion {
+  grid-column-start: 1;
+}
+body ul.patterns li.discussion + li.practice {
+  grid-column-start: 1;
+}
+body ul.patterns li.practice + li.assessment {
+  grid-column-start: 1;
+}
+body ul.patterns li.assessment + li.review {
+  grid-column-start: 1;
+}
+body ul.patterns li.review + li.interactive {
+  grid-column-start: 1;
+}
+body ul.patterns.teaser {
+  grid-auto-rows: auto;
+}
+body ul.patterns.teaser li {
+  justify-content: flex-start;
+  display: none; /* Hidden by default */
+}
+body ul.patterns.teaser li.show {
+  display: block;
+}
+body ul.patterns.teaser li h2 {
+  font-size: 110%;
+}
+body ul.patterns.teaser li p {
+  text-transform: none;
+  font-size: 90%;
+}
+body.pattern header {
+  padding: 1ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90ch;
+  line-height: 1.3;
+}
+body.pattern header > * {
+  margin-left: 2vw;
+  margin-right: auto;
+  max-width: 90ch !important;
+}
+body.pattern header::before {
+  display: block;
+  padding-bottom: 1ch;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 80%;
+  text-align: right;
+}
+body.pattern header.content {
+  background: #a6e4f8;
+}
+body.pattern header.content::before {
+  content: "Content";
+  color: #266578;
+}
+body.pattern header.external {
+  background: #e1b9fc;
+}
+body.pattern header.external::before {
+  content: "External";
+  color: #623a7d;
+}
+body.pattern header.discussion {
+  background: #fdb3b4;
+}
+body.pattern header.discussion::before {
+  content: "discussion";
+  color: #7d3435;
+}
+body.pattern header.practice {
+  background: #fccb8f;
+}
+body.pattern header.practice::before {
+  content: "practice";
+  color: #7c4b0f;
+}
+body.pattern header.assessment {
+  background: #fce3a7;
+}
+body.pattern header.assessment::before {
+  content: "Assessment";
+  color: #7d6428;
+}
+body.pattern header.review {
+  background: #c8dfb6;
+}
+body.pattern header.review::before {
+  content: "review";
+  color: #485f37;
+}
+body.pattern header.interactive {
+  background: #a1d5c5;
+}
+body.pattern header.interactive::before {
+  content: "interactive";
+  color: #225546;
+}
+body.pattern header h1 {
+  text-transform: capitalize;
+}
+body.pattern main {
+  padding: 1ch;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90ch;
+  border-radius: 0 0 0.7ch 0.7ch;
+  line-height: 1.3;
+}
+body.pattern main > * {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2vw;
+}
+body.pattern main .definition {
+  max-width: 60ch;
+  font-size: 120%;
+  font-style: italic;
+}
+body.pattern main.content {
+  background: #70d4f3;
+}
+body.pattern main.external {
+  background: #cf8ffa;
+}
+body.pattern main.discussion {
+  background: #fb8587;
+}
+body.pattern main.practice {
+  background: #f9ab4b;
+}
+body.pattern main.assessment {
+  background: #fad272;
+}
+body.pattern main.review {
+  background: #a6cb8a;
+}
+body.pattern main.interactive {
+  background: #69bba2;
+}
+
+div.filters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 2ch 0;
+}
+div.filters button {
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5ch 1ch;
+  border-radius: 0.7ch;
+  margin: 0.5ch;
+  cursor: pointer;
+}
+div.filters button.active {
+  background-color: #666;
+}
+div.filters button.content {
+  background: #a6e4f8;
+}
+div.filters button.content:hover {
+  background: #70d4f3;
+}
+div.filters button.external {
+  background: #e1b9fc;
+}
+div.filters button.external:hover {
+  background: #cf8ffa;
+}
+div.filters button.discussion {
+  background: #fdb3b4;
+}
+div.filters button.discussion:hover {
+  background: #fb8587;
+}
+div.filters button.practice {
+  background: #fccb8f;
+}
+div.filters button.practice:hover {
+  background: #f9ab4b;
+}
+div.filters button.assessment {
+  background: #fce3a7;
+}
+div.filters button.assessment:hover {
+  background: #fad272;
+}
+div.filters button.review {
+  background: #c8dfb6;
+}
+div.filters button.review:hover {
+  background: #a6cb8a;
+}
+div.filters button.interactive {
+  background: #a1d5c5;
+}
+div.filters button.interactive:hover {
+  background: #69bba2;
+}
+
+#builder main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#builder aside {
+  grid-column: 1/span 1;
+  padding: 1ch;
+}
+#builder aside ul {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(2ch, 10ch));
+  min-height: 50vh;
+  border: 1px dashed #999;
+  list-style: none;
+}
+#builder aside ul li p {
+  visibility: hidden;
+}
+#builder aside ul li.content {
+  border-top: solid 1px #4cc9f0;
+  border-left: solid 2ch #4cc9f0;
+}
+#builder aside ul li.external {
+  border-top: solid 1px #c373f9;
+  border-left: solid 2ch #c373f9;
+}
+#builder aside ul li.discussion {
+  border-top: solid 1px #fa6769;
+  border-left: solid 2ch #fa6769;
+}
+#builder aside ul li.practice {
+  border-top: solid 1px #f8961e;
+  border-left: solid 2ch #f8961e;
+}
+#builder aside ul li.assessment {
+  border-top: solid 1px #f9c74f;
+  border-left: solid 2ch #f9c74f;
+}
+#builder aside ul li.review {
+  border-top: solid 1px #90be6d;
+  border-left: solid 2ch #90be6d;
+}
+#builder aside ul li.interactive {
+  border-top: solid 1px #43aa8b;
+  border-left: solid 2ch #43aa8b;
+}
+#builder article {
+  grid-column: 2/span 3;
+}
+#builder article ul li {
+  cursor: grab;
+}
+#builder .drag-over {
+  border-color: red;
+}
