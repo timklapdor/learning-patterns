@@ -85,6 +85,7 @@ ul.pattern-grid {
         width: fit-content;
         align-self: end;
         background-color: color-mix(in srgb, var(--blk) 10%, transparent);
+        color: light-dark(var(--blk), var(--rev));
     }
 
     h2 {

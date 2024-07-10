@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
     return string.toUpperCase();
   })
 
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
 
   // Markdown

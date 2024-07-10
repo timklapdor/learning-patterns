@@ -1,9 +1,10 @@
 article.page {
     display: grid;
-    grid-template-columns: 5vw 1fr 80ch 1fr 5vw;
+    grid-template-columns: 5vw 1fr minmax(200px, 80ch) 1fr 5vw;
 
     & > * {
         grid-column-start: 3;
+        max-width: 80ch;
     }
 
     p:has(img) {
@@ -19,6 +20,9 @@ article.page {
     }
 
     blockquote {
+        grid-column: 2 / span 3;
+        display: grid;
+        grid-template-columns: minmax(1ch, 1fr) 4fr minmax(1ch, 1fr);
         font-size: 200%;
         font-style: italic;
         border-top: 2px dotted var(--p10-7-juicy);
@@ -26,6 +30,12 @@ article.page {
         background-color: light-dark(var(--p10-7-200), var(--p10-7-700));
         margin: 0;
         padding: 1em;
+        max-width: 80ch;
+        
+        p {
+            grid-column-start: 2;
+            max-width: 80ch;
+        }
         
     }
 

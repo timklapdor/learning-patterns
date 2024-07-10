@@ -19,7 +19,9 @@ body {
     }
 
     
-
+    main {
+        min-height: 100vh;
+    }
 
     hr {
         color: light-dark(var(--blk), var(--rev));

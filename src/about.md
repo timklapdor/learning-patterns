@@ -45,7 +45,7 @@ We noticed almost immediately that a good learning experience does not consist o
 
 A well-constructed lesson provides multiple connection points and opportunities to connect the lesson to the student's prior knowledge or experience. Because everyone's schema is unique, the more diversity, the greater the chance of creating connections.
 
-![Lessons provide connections]({{ 'assets/lesson.jpeg' | url }})
+![Lessons provide connections]({{ 'assets/lesson.png' | url }})
 
 What do you do once you have chosen to develop a specific learning type? You need something more granular. That is where Learning Patterns come in. The idea of a [Pattern Language](https://en.wikipedia.org/wiki/Pattern_language) comes from Christopher Alexander, an architect who was looking to empower his clients to define the features and functions of a space. What he realised was that there were common "patterns" that could describe these features and functions and be reused to solve individual design problems.
 
