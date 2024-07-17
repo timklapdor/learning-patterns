@@ -17,7 +17,12 @@ article.types {
         min-height: 90vh;
 
 
-        h2 {font-size: 300%;}
+        h2 {font-size: 400%;}
+
+        .description {
+            font-style: italic;
+            font-size: 200%;
+        }
         
         & > * {
             grid-column-start: 3;
@@ -35,6 +40,7 @@ article.types {
         & ul.details {
             list-style: none;
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             padding: 2ch 0;
             justify-content: space-between;

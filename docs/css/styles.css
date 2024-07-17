@@ -142,7 +142,7 @@ h4 {
 }
 
 p, li {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .light {
@@ -164,10 +164,10 @@ body a {
   color: light-dark(var(--p10-1-600), var(--p10-1-400));
 }
 body a:hover {
-  color: light-dark(var(--p10-1-700), var(--p10-1-500));
+  color: light-dark(var(--p10-1-700), var(--p10-1-600));
 }
 body a:visited {
-  color: light-dark(var(--p10-7-700), var(--p10-7-500));
+  color: light-dark(var(--p10-1-600), var(--p10-1-400));
 }
 body main {
   min-height: 100vh;
@@ -500,6 +500,27 @@ article.page blockquote p {
 article.page li {
   padding: 0.4ch;
 }
+article.page div.creative {
+  padding: 2ch;
+  background: light-dark(var(--p10-6-400), var(--p10-6-600));
+  border-top: 4px solid light-dark(var(--p10-6-400), var(--p10-6-800));
+  border-bottom: 4px solid light-dark(var(--p10-6-400), var(--p10-6-800));
+}
+article.page div.creative p {
+  display: block;
+}
+article.page div.creative > * {
+  padding: 1ch;
+}
+article.page div.creative a:has(img) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+article.page div.creative img {
+  width: 100%;
+  padding: 1ch;
+}
 article.page table {
   border-collapse: collapse;
 }
@@ -556,7 +577,11 @@ article.types section {
   min-height: 90vh;
 }
 article.types section h2 {
-  font-size: 300%;
+  font-size: 400%;
+}
+article.types section .description {
+  font-style: italic;
+  font-size: 200%;
 }
 article.types section > * {
   grid-column-start: 3;
@@ -586,6 +611,7 @@ article.types section.social {
 article.types section ul.details {
   list-style: none;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   padding: 2ch 0;
   justify-content: space-between;
@@ -619,7 +645,6 @@ footer ul li {
   color: light-dark(var(--shade-500), var(--shade-500));
   padding: 2ch;
 }
-footer ul li a {
-  text-decoration: none;
+footer ul li a, footer ul li a:active, footer ul li a:visited {
   color: light-dark(var(--shade-700), var(--shade-300));
 }

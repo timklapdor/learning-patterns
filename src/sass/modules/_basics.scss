@@ -10,12 +10,12 @@ body {
        color: light-dark(var(--p10-1-600), var(--p10-1-400)); 
 
        &:hover {
-        color: light-dark(var(--p10-1-700), var(--p10-1-500)); 
+        color: light-dark(var(--p10-1-700), var(--p10-1-600)); 
        }
 
        &:visited {
-        color: light-dark(var(--p10-7-700), var(--p10-7-500)); 
-       }
+        color: light-dark(var(--p10-1-600), var(--p10-1-400)); 
+    }
     }
 
     

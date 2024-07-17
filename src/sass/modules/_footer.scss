@@ -14,8 +14,7 @@ footer {
             color: light-dark(var(--shade-500), var(--shade-500));
             padding: 2ch;
 
-            a {
-                text-decoration: none;
+            a, a:active, a:visited  {
                 color: light-dark(var(--shade-700), var(--shade-300));
             }
         }

@@ -3,6 +3,8 @@ layout: types.njk
 permalink: types.html
 ---
 
+## About Learning Types
+
 Understanding the various Types of Learning allows the conversation and thinking about about the process and practice of teaching and instruction to become more student centred. 
 
 {%- for item in types -%}
