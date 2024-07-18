@@ -14,10 +14,17 @@ article.types {
         grid-column: 1 / 6;
         grid-template-columns: 5vw 1fr minmax(200px, 80ch) 1fr 5vw;
         grid-template-rows: max-content max-content max-content max-content auto;
-        min-height: 90vh;
+        min-height: 70vh;
 
 
-        h2 {font-size: 400%;}
+        h2 {
+            // font-size: 4rem;
+            --fluid-type-min: 2.5rem;
+            --fluid-type-max: 5rem;
+            --fluid-type-target: 4vw;
+
+            line-height: 1;
+        }
 
         .description {
             font-style: italic;

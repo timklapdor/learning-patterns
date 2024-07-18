@@ -68,8 +68,13 @@ article.page {
         }
     }
 
+    .wrapper {
+        overflow: scroll;
+    }
+
     table {
         border-collapse: collapse;
+        width: 100%;
 
 
         col {

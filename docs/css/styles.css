@@ -120,7 +120,7 @@ h1 {
 
 h2 {
   --fluid-type-min: 1.5rem;
-  --fluid-type-target: 1.2vw;
+  --fluid-type-target: 4vw;
   --fluid-type-max: 2rem;
   line-height: 1;
 }
@@ -521,8 +521,12 @@ article.page div.creative img {
   width: 100%;
   padding: 1ch;
 }
+article.page .wrapper {
+  overflow: scroll;
+}
 article.page table {
   border-collapse: collapse;
+  width: 100%;
 }
 article.page table col {
   width: 30%;
@@ -574,10 +578,13 @@ article.types section {
   grid-column: 1/6;
   grid-template-columns: 5vw 1fr minmax(200px, 80ch) 1fr 5vw;
   grid-template-rows: max-content max-content max-content max-content auto;
-  min-height: 90vh;
+  min-height: 70vh;
 }
 article.types section h2 {
-  font-size: 400%;
+  --fluid-type-min: 2.5rem;
+  --fluid-type-max: 5rem;
+  --fluid-type-target: 4vw;
+  line-height: 1;
 }
 article.types section .description {
   font-style: italic;

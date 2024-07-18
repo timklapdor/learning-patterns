@@ -17,6 +17,8 @@ Learning is the ability to take new information and assimilate it into our exist
 
 Diana Laurillard helped introduce the concept of **Learning Types** in her conversational framework, mapping the dialogic relationship between teachers and students. Through a range of collaborative efforts, these types evolved into these seven Learning Types:
 
+<div class="wrapper">
+
 | | |
 |----|----|
 |**Assimilative**|Learning through presented information|
@@ -27,9 +29,13 @@ Diana Laurillard helped introduce the concept of **Learning Types** in her conve
 |**Evaluative**|Learning through feedback|
 |**Social**|Learning with others|
 
+</div>
+
 These seven learning types provide different ways individual learners can to connect to someone's schema. They also shift perspectives from the teacher and their instruction to the learner and their experience. These learning types work amazingly well in planning and designing courses and experiences, and they work incredibly well as diagnostic tools.
 
 We also found it helpful to align the Learning Types to ***activities***, what the students will be *doing* and spending time in the course. 
+
+<div class="wrapper">
 
 |<col> |<col> |<col> |
 |----|----|----|
@@ -40,6 +46,9 @@ We also found it helpful to align the Learning Types to ***activities***, what t
 |*Productive*|**Assessment**|Students produce artefacts as evidence of learning.|
 |*Evaluative*|**Review**|Creating opportunities to learn from reflection and feedback.|
 |*Social*|**Interactive**|Creating opportunities to learn from others.|
+
+</div>
+
 
 We noticed almost immediately that a good learning experience does not consist of a singular learning type but is constructed from combining them and moving through them as a sequence or a lesson.
 
