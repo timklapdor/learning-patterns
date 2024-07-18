@@ -21,8 +21,8 @@ Diana Laurillard helped introduce the concept of **Learning Types** in her conve
 |----|----|
 |**Assimilative**|Learning through presented information|
 |**Investigative**|Learning by seeking information|
-|**Formative**|Learning by trying|
 |**Discursive**|Learning by engaging with other perspectives|
+|**Formative**|Learning by trying|
 |**Productive**|Learning by creating artefacts|
 |**Evaluative**|Learning through feedback|
 |**Social**|Learning with others|
@@ -35,8 +35,8 @@ We also found it helpful to align the Learning Types to ***activities***, what t
 |----|----|----|
 |*Assimilative*|**Content**|Creating information for the student to learn from.|
 |*Investigative*|**External Resources**|Curating information for the student to engage with.|
-|*Formative*|**Practice**|Providing opportunities for learners to try things out.|
 |*Discursive*|**Discussion**|Creating opportunities to share and engage with different perspectives.
+|*Formative*|**Practice**|Providing opportunities for learners to try things out.|
 |*Productive*|**Assessment**|Students produce artefacts as evidence of learning.|
 |*Evaluative*|**Review**|Creating opportunities to learn from reflection and feedback.|
 |*Social*|**Interactive**|Creating opportunities to learn from others.|

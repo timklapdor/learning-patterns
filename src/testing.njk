@@ -42,7 +42,7 @@ permalink: test-index.html
       <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
-      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'finding' if 'external' in item.data.activity }}</li>
     </ul>
 	<main class="{{item.data.activity }}">
 	{{ item.templateContent | safe }}
@@ -64,7 +64,7 @@ permalink: test-index.html
       <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
-      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'talking' if 'discussion' in item.data.activity }}</li>
     </ul>
 	<main class="{{item.data.activity }}">
 	{{ item.templateContent | safe }}
@@ -86,7 +86,7 @@ permalink: test-index.html
       <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
-      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'trying' if 'practice' in item.data.activity }}</li>
     </ul>
 	<main class="{{item.data.activity }}">
 	{{ item.templateContent | safe }}
@@ -108,7 +108,7 @@ permalink: test-index.html
       <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
-      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'making' if 'assessment' in item.data.activity }}</li>
     </ul>
 	<main class="{{item.data.activity }}">
 	{{ item.templateContent | safe }}
@@ -130,7 +130,7 @@ permalink: test-index.html
       <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
-      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'reflecting' if 'review' in item.data.activity }}</li>
     </ul>
 	<main class="{{item.data.activity }}">
 	{{ item.templateContent | safe }}
@@ -152,7 +152,7 @@ permalink: test-index.html
       <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
-      <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
+      <li><span>Verb </span> {{ 'sharing' if 'interactive' in item.data.activity }}</li>
     </ul>
 	<main class="{{item.data.activity }}">
 	{{ item.templateContent | safe }}
