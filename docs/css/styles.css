@@ -426,16 +426,40 @@ ul.pattern-grid li.interactive {
 }
 
 :popover-open {
+  display: flex;
+  flex-direction: column;
   border-radius: 1ch;
   width: 60vw !important;
   height: 70vh !important;
   overflow-y: scroll;
   border: 0;
   padding: 1.5rem;
-  width: 25ch;
 }
 :popover-open h2 {
   text-transform: capitalize;
+}
+:popover-open .sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+:popover-open .close-btn {
+  border: none;
+  background: none;
+  justify-self: end;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+}
+:popover-open .close-btn [aria-hidden] {
+  filter: grayscale(0%) brightness(0);
+}
+:popover-open .close-btn:hover, :popover-open .close-btn:focus {
+  background: color-mix(in srgb, var(--blk) 10%, transparent);
+  filter: none;
 }
 :popover-open.content {
   background: light-dark(var(--p10-1-300), var(--p10-1-700));

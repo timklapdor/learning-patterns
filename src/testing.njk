@@ -11,20 +11,25 @@ permalink: test-index.html
   <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
     <h2>{{ item.data.pattern }}</h2>
   <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  
   <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
-    <header class="activity {{ item.data.activity }}">
-		<h3>{{ item.data.pattern }}</h3>
-		<p class="definition">{{ item.data.definition }}</p>
+    <button class="close-btn" popovertarget="{{ item.data.pattern | slug }}" popovertargetaction="hide">
+      <span aria-hidden=”true”>❌</span>
+      <span class="sr-only">Close</span>
+    </button>
 
-	</header>
-      <ul class="details"> 
+    <header class="activity {{ item.data.activity }}">
+		  <h3>{{ item.data.pattern }}</h3>
+	  	<p class="definition">{{ item.data.definition }}</p>
+  	</header>
+    <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
       <li><span>Verb </span> {{ 'consuming' if 'content' in item.data.activity }}</li>
     </ul>
-	<main class="{{item.data.activity }}">
-	{{ item.templateContent | safe }}
-	</main>
+	  <main class="{{item.data.activity }}">
+	    {{ item.templateContent | safe }}
+	  </main>
   </div>
 </li>
 {% endfor %}
@@ -33,20 +38,24 @@ permalink: test-index.html
   <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
     <h2>{{ item.data.pattern }}</h2>
   <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  
   <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
-    <header class="activity {{ item.data.activity }}">
-		<h3>{{ item.data.pattern }}</h3>
-		<p class="definition">{{ item.data.definition }}</p>
-
-	</header>
+      <button class="close-btn" popovertarget="{{ item.data.pattern | slug }}" popovertargetaction="hide">
+        <span aria-hidden=”true”>❌</span>
+        <span class="sr-only">Close</span>
+      </button>
+      <header class="activity {{ item.data.activity }}">
+        <h3>{{ item.data.pattern }}</h3>
+        <p class="definition">{{ item.data.definition }}</p>
+    	</header>
       <ul class="details"> 
-      <li><span>Type </span> {{ item.data.type }}</li>
-      <li><span>Activity </span> {{ item.data.activity }}</li>
-      <li><span>Verb </span> {{ 'finding' if 'external' in item.data.activity }}</li>
+        <li><span>Type </span> {{ item.data.type }}</li>
+        <li><span>Activity </span> {{ item.data.activity }}</li>
+        <li><span>Verb </span> {{ 'finding' if 'external' in item.data.activity }}</li>
     </ul>
-	<main class="{{item.data.activity }}">
-	{{ item.templateContent | safe }}
-	</main>
+	  <main class="{{item.data.activity }}">
+	    {{ item.templateContent | safe }}
+	  </main>
   </div>
 </li>
 {% endfor %}
@@ -55,20 +64,24 @@ permalink: test-index.html
   <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
     <h2>{{ item.data.pattern }}</h2>
   <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  
   <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <button class="close-btn" popovertarget="{{ item.data.pattern | slug }}" popovertargetaction="hide">
+      <span aria-hidden=”true”>❌</span>
+      <span class="sr-only">Close</span>
+     </button>
     <header class="activity {{ item.data.activity }}">
-		<h3>{{ item.data.pattern }}</h3>
-		<p class="definition">{{ item.data.definition }}</p>
-
-	</header>
-      <ul class="details"> 
+		  <h3>{{ item.data.pattern }}</h3>
+		  <p class="definition">{{ item.data.definition }}</p>
+  	</header>
+    <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
       <li><span>Verb </span> {{ 'talking' if 'discussion' in item.data.activity }}</li>
     </ul>
-	<main class="{{item.data.activity }}">
-	{{ item.templateContent | safe }}
-	</main>
+	  <main class="{{item.data.activity }}">
+	    {{ item.templateContent | safe }}
+	  </main>
   </div>
 </li>
 {% endfor %}
@@ -78,19 +91,22 @@ permalink: test-index.html
     <h2>{{ item.data.pattern }}</h2>
   <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
   <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <button class="close-btn" popovertarget="{{ item.data.pattern | slug }}" popovertargetaction="hide">
+      <span aria-hidden=”true”>❌</span>
+      <span class="sr-only">Close</span>
+    </button>
     <header class="activity {{ item.data.activity }}">
-		<h3>{{ item.data.pattern }}</h3>
-		<p class="definition">{{ item.data.definition }}</p>
-
-	</header>
-      <ul class="details"> 
+		  <h3>{{ item.data.pattern }}</h3>
+		  <p class="definition">{{ item.data.definition }}</p>
+  	</header>
+    <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
       <li><span>Verb </span> {{ 'trying' if 'practice' in item.data.activity }}</li>
     </ul>
-	<main class="{{item.data.activity }}">
-	{{ item.templateContent | safe }}
-	</main>
+	  <main class="{{item.data.activity }}">
+	    {{ item.templateContent | safe }}
+	  </main>
   </div>
 </li>
 {% endfor %}
@@ -99,20 +115,24 @@ permalink: test-index.html
   <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
     <h2>{{ item.data.pattern }}</h2>
   <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
-  <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
-    <header class="activity {{ item.data.activity }}">
-		<h3>{{ item.data.pattern }}</h3>
-		<p class="definition">{{ item.data.definition }}</p>
 
-	</header>
-      <ul class="details"> 
+  <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <button class="close-btn" popovertarget="{{ item.data.pattern | slug }}" popovertargetaction="hide">
+      <span aria-hidden=”true”>❌</span>
+      <span class="sr-only">Close</span>
+    </button>
+    <header class="activity {{ item.data.activity }}">
+		  <h3>{{ item.data.pattern }}</h3>
+		  <p class="definition">{{ item.data.definition }}</p>
+  	</header>
+    <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
       <li><span>Verb </span> {{ 'making' if 'assessment' in item.data.activity }}</li>
     </ul>
-	<main class="{{item.data.activity }}">
-	{{ item.templateContent | safe }}
-	</main>
+	  <main class="{{item.data.activity }}">
+	    {{ item.templateContent | safe }}
+	  </main>
   </div>
 </li>
 {% endfor %}
@@ -121,20 +141,24 @@ permalink: test-index.html
   <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
     <h2>{{ item.data.pattern }}</h2>
   <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  
   <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <button class="close-btn" popovertarget="{{ item.data.pattern | slug }}" popovertargetaction="hide">
+      <span aria-hidden=”true”>❌</span>
+      <span class="sr-only">Close</span>
+    </button>
     <header class="activity {{ item.data.activity }}">
-		<h3>{{ item.data.pattern }}</h3>
-		<p class="definition">{{ item.data.definition }}</p>
-
-	</header>
-      <ul class="details"> 
+		  <h3>{{ item.data.pattern }}</h3>
+		  <p class="definition">{{ item.data.definition }}</p>
+  	</header>
+    <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
       <li><span>Verb </span> {{ 'reflecting' if 'review' in item.data.activity }}</li>
     </ul>
-	<main class="{{item.data.activity }}">
-	{{ item.templateContent | safe }}
-	</main>
+	  <main class="{{item.data.activity }}">
+	    {{ item.templateContent | safe }}
+	  </main>
   </div>
 </li>
 {% endfor %}
@@ -143,20 +167,24 @@ permalink: test-index.html
   <li class="filterDiv {{ item.data.type }} {{ item.data.activity }}" >
     <h2>{{ item.data.pattern }}</h2>
   <button popovertarget="{{ item.data.pattern | slug }}">Open</button>
+  
   <div popover id="{{ item.data.pattern | slug }}" class="{{ item.data.activity }}">
+    <button class="close-btn" popovertarget="{{ item.data.pattern | slug }}" popovertargetaction="hide">
+      <span aria-hidden=”true”>❌</span>
+      <span class="sr-only">Close</span>
+    </button>
     <header class="activity {{ item.data.activity }}">
-		<h3>{{ item.data.pattern }}</h3>
-		<p class="definition">{{ item.data.definition }}</p>
-
-	</header>
-      <ul class="details"> 
+		  <h3>{{ item.data.pattern }}</h3>
+		  <p class="definition">{{ item.data.definition }}</p>
+  	</header>
+    <ul class="details"> 
       <li><span>Type </span> {{ item.data.type }}</li>
       <li><span>Activity </span> {{ item.data.activity }}</li>
       <li><span>Verb </span> {{ 'sharing' if 'interactive' in item.data.activity }}</li>
     </ul>
-	<main class="{{item.data.activity }}">
-	{{ item.templateContent | safe }}
-	</main>
+	  <main class="{{item.data.activity }}">
+	    {{ item.templateContent | safe }}
+	  </main>
   </div>
 </li>
 {% endfor %}

@@ -1,13 +1,42 @@
 :popover-open {
+    display: flex;
+    flex-direction: column;
     border-radius: 1ch;
     width: 60vw !important;
     height: 70vh !important;
     overflow-y: scroll;
     border: 0;
     padding: 1.5rem;
-    width: 25ch;
 
     h2 {text-transform: capitalize;}
+
+    .sr-only:not(:focus):not(:active) {
+      clip: rect(0 0 0 0); 
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap; 
+      width: 1px;
+    }
+    
+    .close-btn {
+      border: none;
+      background: none;
+      justify-self: end;
+      font-size: 1.5rem;
+      border-radius: 0.8rem;
+      
+      [aria-hidden] {
+        filter: grayscale(0%) brightness(0);
+      }
+      
+      &:hover,
+      &:focus {
+        background: color-mix(in srgb, var(--blk) 10%, transparent);
+        filter: none;
+      }
+    }
 
     &.content {
       background: light-dark(var(--p10-1-300), var(--p10-1-700));
