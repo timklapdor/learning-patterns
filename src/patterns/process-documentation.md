@@ -1,12 +1,11 @@
 ---
-activity: assessment
-tags:
-  - assessment
-type:
-  - productive
-pattern: "process Documentation "
-status: ""
-definition: Documented actions and decisions.
-scaffold: Process documentation, as an assessment, provides insight into a learner's understanding and application through transparency, making their process visible. This assessment can take many different formats that suit different disciplines and practices — from operations manuals to application forms, scope and sequencing of tasks, risk assessments, and how-to guides to process diaries and logs. The defining element is that learners record their actions and decisions so that the process to reach the end is clear and can be assessed. This provides opportunities for learners to reflect on their practice and encourages metacognition as they evaluate their approach to problem-solving and task execution. Process documentation allows for progress tracking from the initial stages to the final outcome and, through their records, shows their development, effort, and the evolution of their understanding and skills. Seeing concrete evidence of work and learning makes the assessment more objective and comprehensive.
+activity: "assessment"
+tags: "assessment"
+type: "productive"
+pattern: "process documentation "
+status: "live"
+definition: "Documented actions and decisions."
+scaffold: "Process documentation, as an assessment, provides insight into a learner's understanding and application through transparency, making their process visible. This assessment can take many different formats that suit different disciplines and practices — from operations manuals to application forms, scope and sequencing of tasks, risk assessments, and how-to guides to process diaries and logs. The defining element is that learners record their actions and decisions so that the process to reach the end is clear and can be assessed. This provides opportunities for learners to reflect on their practice and encourages metacognition as they evaluate their approach to problem-solving and task execution. Process documentation allows for progress tracking from the initial stages to the final outcome and, through their records, shows their development, effort, and the evolution of their understanding and skills. Seeing concrete evidence of work and learning makes the assessment more objective and comprehensive."
 ---
+
 Process documentation, as an assessment, provides insight into a learner's understanding and application through transparency, making their process visible. This assessment can take many different formats that suit different disciplines and practices — from operations manuals to application forms, scope and sequencing of tasks, risk assessments, and how-to guides to process diaries and logs. The defining element is that learners record their actions and decisions so that the process to reach the end is clear and can be assessed. This provides opportunities for learners to reflect on their practice and encourages metacognition as they evaluate their approach to problem-solving and task execution. Process documentation allows for progress tracking from the initial stages to the final outcome and, through their records, shows their development, effort, and the evolution of their understanding and skills. Seeing concrete evidence of work and learning makes the assessment more objective and comprehensive. 
