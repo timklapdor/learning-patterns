@@ -13,14 +13,16 @@ permalink: versions.html
 - **NEW** Types page
 - **NEW** Colophon page
 - **NEW** Version page
+- Edits to Productive/Assessment Patterns
 
-## V1.0
+
+## V1.3
+- View [Version 1](version1.html)
 - Basic library of 79 pattern
 - Built filters using Activity Types
 - Cards open to new page
 
 ## Planned
 
-- Edits to Productive/Assessment Patterns
 - Additional patterns listed in [GitHub Issues](https://github.com/timklapdor/learning-patterns/issues)
 

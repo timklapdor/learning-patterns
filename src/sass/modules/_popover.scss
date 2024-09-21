@@ -36,6 +36,18 @@
         background: color-mix(in srgb, var(--blk) 10%, transparent);
         filter: none;
       }
+
+      @media (prefers-color-scheme: dark) {
+        [aria-hidden] {
+            filter: grayscale(100%) brightness(100);
+          }
+          
+          &:hover,
+          &:focus {
+            background: color-mix(in srgb, var(--rev) 10%, transparent);
+            filter: none;
+          }
+      }
     }
 
     &.content {

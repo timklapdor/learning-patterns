@@ -461,6 +461,15 @@ ul.pattern-grid li.interactive {
   background: color-mix(in srgb, var(--blk) 10%, transparent);
   filter: none;
 }
+@media (prefers-color-scheme: dark) {
+  :popover-open .close-btn [aria-hidden] {
+    filter: grayscale(100%) brightness(100);
+  }
+  :popover-open .close-btn:hover, :popover-open .close-btn:focus {
+    background: color-mix(in srgb, var(--rev) 10%, transparent);
+    filter: none;
+  }
+}
 :popover-open.content {
   background: light-dark(var(--p10-1-300), var(--p10-1-700));
 }
@@ -673,7 +682,7 @@ footer ul {
 footer ul li {
   padding: 0;
   font-size: 90%;
-  color: light-dark(var(--shade-500), var(--shade-500));
+  color: light-dark(var(--shade-700), var(--shade-500));
   padding: 2ch;
 }
 footer ul li a, footer ul li a:active, footer ul li a:visited {
